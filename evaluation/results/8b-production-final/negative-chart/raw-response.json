@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"43603530299_6\",\n      \"description\": \"Заголовок таблицы 'Размерная таблица Nike' красного цвета.\",\n      \"bbox\": [287, 109, 709, 141]\n    },\n    {\n      \"image_id\": \"43603530299_6\",\n      \"description\": \"Головная строка таблицы 'Мужская обувь' синего цвета.\",\n      \"bbox\": [83, 157, 485, 182]\n    },\n    {\n      \"image_id\": \"43603530299_6\",\n      \"description\": \"Головная строка таблицы 'Женская обувь' синего цвета.\",\n      \"bbox\": [507, 157, 915, 182]\n    },\n    {\n      \"image_id\": \"43603530299_6\",\n      \"description\": \"Ячейка таблицы с размером '17' и значением '51,5' в столбце 'RU' для мужской обуви.\",\n      \"bbox\": [100, 822, 200, 847]\n    },\n    {\n      \"image_id\": \"43603530299_6\",\n      \"description\": \"Ячейка таблицы с размером '17' и значением '33,4' в столбце 'Длина стопы (см)' для мужской обуви.\",\n      \"bbox\": [200, 822, 300, 847]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793875346,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 422,
+    "prompt_tokens": 1999,
+    "total_tokens": 2421,
+    "prompt_tokens_details": {
+      "cached_tokens": 494
+    }
+  },
+  "id": "chatcmpl-kXfEhmSAKXoURyJ3t0JPfghqh0RubGQb",
+  "timings": {
+    "cache_n": 494,
+    "prompt_n": 1505,
+    "prompt_ms": 1060.552,
+    "prompt_per_token_ms": 0.7046857142857142,
+    "prompt_per_second": 1419.0723321440157,
+    "predicted_n": 422,
+    "predicted_ms": 4444.644,
+    "predicted_per_token_ms": 10.55734916864608,
+    "predicted_per_second": 94.72074703845797
+  }
+}

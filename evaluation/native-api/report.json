@@ -1,0 +1,227 @@
+{
+  "base_url": "http://127.0.0.1:8000",
+  "started_at_utc": "2026-11-05T10:49:31.721846+00:00",
+  "scope": "Real API/model calls; response contracts only. Review boxes and descriptions visually.",
+  "checks": [
+    {
+      "name": "health",
+      "method": "GET",
+      "path": "/api/health",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"status\":\"ok\",\"model\":\"qwen3-vl:8b-instruct\",\"provider\":\"http://127.0.0.1:11436/v1\",\"catalog_products\":15,\"manual_ttl_seconds\":3600.0,\"max_photos\":20,\"max_analyze_photos\":4}",
+      "seconds": 0.03
+    },
+    {
+      "name": "catalog",
+      "method": "GET",
+      "path": "/api/products",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "[{\"id\":\"39506410299\",\"name\":\"Шарф унисекс FALKE\"},{\"id\":\"40054730299\",\"name\":\"Бейсболка AMERICAN NEEDLE 44747A-MILB Minor League Baseball Archive MILB\"},{\"id\":\"40016330299\",\"name\":\"Бейсболка с сеточкой CAPSLAB CL/LOO/1/SAM1 Looney Tunes Yosemite Sam\"},{\"id\":\"43358020299\",\"name\":\"Чемодан TORBER СЕЛИГЕР 35 л\"},{\"id\":\"34838390299\",\"name\":\"Очки поляризационные мужские Jaxon okx53 sm серое стекло\"},{\"id\":\"43603530299\",\"name\":\"Кеды женские Nike Air Force 1\"},{\"id\":\"42351410299\",\"name\":\"Кроссовки мужские Nike Air Zoom GT Cut Academy Ep\"},{\"id\":\"44077690299\",\"name\":\"Кеды высокие женские Nike Blazer Mid 77\"},{\"id\":\"44014520299\",\"name\":\"Кроссовки мужские Arc'teryx Sylan\"},{\"id\":\"40917920299\",\"name\":\"Кроссовки Adidas Samba Messi Gold\"},{\"id\":\"33578610299\",\"name\":\"Костюм мужской Demix\"},{\"id\":\"42153320299\",\"name\":\"Куртка унисекс Nothomme 24W003 WINDBREAKER\"},{\"id\":\"35472730299\",\"name\":\"Тайтсы для мальчиков Demix\"},{\"id\":\"35950190299\",\"name\":\"Толстовка мужская adidas\"},{\"id\":\"42310740299\",\"name\":\"Костюм bodo\"}]",
+      "seconds": 0.0
+    },
+    {
+      "name": "catalog_cap",
+      "method": "GET",
+      "path": "/api/products/40016330299",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"id\":\"40016330299\",\"name\":\"Бейсболка с сеточкой CAPSLAB CL/LOO/1/SAM1 Looney Tunes Yosemite Sam\",\"description\":\"Черная бейсболка Yosemite Sam из коллекции Looney Tunes. Модель сшита из хлопка и полиэстера. Твердая передняя панель украшена нашивкой с оранжевой окантовкой, на которой изображен колоритный персонаж Йоземит Сэм и желтая надпись Sam. Герой, вооруженный пистолетом, хитро смотрит с бейсболок Capslab. На сетке сбоку — тканевая нашивка с желтой надписью Yosemite Sam. С другой стороны бейсболки — резиновый ярлычок с названием бренда. Внутренняя часть козырька оранжевая. Размер головного убора регулируется при помощи пластиковой застежки. Рядом — резиновый ярлычок с логотипом марки. Внутренние швы обшиты брендированной тканью. Длина козырька 6.5 см, глубина бейсболки 13 см.\",\"images\":[{\"id\":\"catalog-40016330299-1\",\"url\":\"/api/media/catalog-40016330299-1\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-40016330299-2\",\"url\":\"/api/media/catalog-40016330299-2\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-40016330299-3\",\"url\":\"/api/media/catalog-40016330299-3\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-40016330299-4\",\"url\":\"/api/media/catalog-40016330299-4\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-40016330299-5\",\"url\":\"/api/media/catalog-40016330299-5\",\"width\":1200,\"height\":1600}]}",
+      "seconds": 0.0
+    },
+    {
+      "name": "catalog_suitcase",
+      "method": "GET",
+      "path": "/api/products/43358020299",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"id\":\"43358020299\",\"name\":\"Чемодан TORBER СЕЛИГЕР 35 л\",\"description\":\"Чемодан TORBER СЕЛИГЕР<br><br>Мягкие линии этого чемодана словно застывшая водная рябь на поверхности озера. Каждая грань этой текстуры как легкий ветер, пробежавший по Селигеру.<br><br>Как Селигер не отпускает путешественника, даря все новые и новые повороты, так и наш чемодан проведет вас сквозь стихию личных открытий с неизменным комфортом. Это не просто багаж - это ваш надежный плот в реке жизни.<br><br>Позвольте себе роскошь исследовать мир, не боясь потерять ориентиры стиля вместе с чемоданом TORBER СЕЛИГЕР.<br><br>Легкая регулируемая телескопическая ручка и система из 4 двойных колес, вращающихся на 360 градусов, обеспечивают мягкий ход и свободное движение во всех направлениях.<br><br>Чемодан полностью раскрывается на 2 вместительных отделения, с перегородкой на молнии и ремнями в форме X для надежной фиксации вещей на месте.<br><br>Использование цифрового замка системы TSA позволяет сотрудникам таможни осуществлять инспекцию багажа без повреждения чемодана.<br><br>Размеры чемодана составляют 38х20,5х55 см., а объем - 35 литров.<br><br>- Материал: полипропилен;<br>- 4 двойных колеса, вращающихся на 360 градусов;<br>- Телескопическая ручка с фиксатором;<br>- 2 отделения: одно с фиксирующими ремнями, второе на молнии с карманом;<br>- Замок TSA для сохранности ваших вещей.\",\"images\":[{\"id\":\"catalog-43358020299-1\",\"url\":\"/api/media/catalog-43358020299-1\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-2\",\"url\":\"/api/media/catalog-43358020299-2\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-3\",\"url\":\"/api/media/catalog-43358020299-3\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-4\",\"url\":\"/api/media/catalog-43358020299-4\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-5\",\"url\":\"/api/media/catalog-43358020299-5\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-6\",\"url\":\"/api/media/catalog-43358020299-6\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-7\",\"url\":\"/api/media/catalog-43358020299-7\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-8\",\"url\":\"/api/media/catalog-43358020299-8\",\"width\":1200,\"height\":1600}]}",
+      "seconds": 0.0
+    },
+    {
+      "name": "suggest_five_photos",
+      "method": "POST",
+      "path": "/api/suggest",
+      "passed": true,
+      "request_json": {
+        "product_id": "40016330299",
+        "image_ids": [
+          "catalog-40016330299-1",
+          "catalog-40016330299-2",
+          "catalog-40016330299-3",
+          "catalog-40016330299-4",
+          "catalog-40016330299-5"
+        ]
+      },
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"selected_image_ids\":[\"catalog-40016330299-1\",\"catalog-40016330299-3\",\"catalog-40016330299-4\"],\"reason\":\"Фото A показывает переднюю часть кепки с нашивкой, фото C — заднюю часть с креплением, фото D — боковой вид с сеткой и козырьком. Эти виды дают полное представление о конструкции и деталях изделия.\"}",
+      "seconds": 2.25
+    },
+    {
+      "name": "analyze_single_photo",
+      "method": "POST",
+      "path": "/api/analyze",
+      "passed": true,
+      "request_json": {
+        "product_id": "40016330299",
+        "image_ids": [
+          "catalog-40016330299-4"
+        ]
+      },
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"features\":[{\"image_id\":\"catalog-40016330299-4\",\"description\":\"На задней части бейсболки видна сетчатая вставка с оранжевыми полосами, на которых напечатан текст.\",\"bbox\":[325,200,885,644],\"id\":\"feature-1\"},{\"image_id\":\"catalog-40016330299-4\",\"description\":\"На оранжевой козырьке бейсболки видны черные строчки по краю.\",\"bbox\":[85,346,450,800],\"id\":\"feature-2\"},{\"image_id\":\"catalog-40016330299-4\",\"description\":\"На внутренней стороне бейсболки видна черная тканевая подкладка с металлической петлей для регулировки размера.\",\"bbox\":[280,440,600,666],\"id\":\"feature-3\"}]}",
+      "seconds": 4.47
+    },
+    {
+      "name": "reanalyze_four_photos",
+      "method": "POST",
+      "path": "/api/analyze",
+      "passed": true,
+      "request_json": {
+        "product_id": "40016330299",
+        "image_ids": [
+          "catalog-40016330299-1",
+          "catalog-40016330299-2",
+          "catalog-40016330299-4",
+          "catalog-40016330299-5"
+        ]
+      },
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"features\":[{\"image_id\":\"catalog-40016330299-1\",\"description\":\"На передней части бейсболки расположен вышитый прямоугольный нашивок с изображением персонажа и надписью 'SAM'.\",\"bbox\":[276,341,527,543],\"id\":\"feature-1\"},{\"image_id\":\"catalog-40016330299-2\",\"description\":\"На боковой части бейсболки пришита нашивка с надписью 'YOSEMITE SAM' желтым цветом на черном фоне.\",\"bbox\":[105,507,189,587],\"id\":\"feature-2\"},{\"image_id\":\"catalog-40016330299-4\",\"description\":\"На внутренней стороне бейсболки видна оранжевая тканевая лента с повторяющейся надписью '[× CAPSLAB]' и металлическая петля для регулировки размера.\",\"bbox\":[330,279,876,647],\"id\":\"feature-3\"},{\"image_id\":\"catalog-40016330299-5\",\"description\":\"На нашивке изображен персонаж с длинной рыжей бородой, одетый в красную рубашку и синие штаны, держащий в руках оружие.\",\"bbox\":[74,184,905,807],\"id\":\"feature-4\"}]}",
+      "seconds": 9.84
+    },
+    {
+      "name": "reject_empty_selection",
+      "method": "POST",
+      "path": "/api/analyze",
+      "passed": true,
+      "request_json": {
+        "product_id": "40016330299",
+        "image_ids": []
+      },
+      "status_code": 422,
+      "content_type": "application/json",
+      "raw_response": "{\"detail\":[{\"type\":\"too_short\",\"loc\":[\"body\",\"image_ids\"],\"msg\":\"List should have at least 1 item after validation, not 0\",\"input\":[],\"ctx\":{\"field_type\":\"List\",\"min_length\":1,\"actual_length\":0}}]}",
+      "seconds": 0.01
+    },
+    {
+      "name": "download_manual_source",
+      "method": "GET",
+      "path": "/api/media/catalog-43358020299-1",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "image/jpeg",
+      "response_bytes": 69037,
+      "response_sha256": "e417adebee51ba683747b55491673e864f9ecc2ec57c3a3c0d5290814c3e76fd",
+      "seconds": 0.0
+    },
+    {
+      "name": "manual_upload",
+      "method": "POST",
+      "path": "/api/products/manual",
+      "passed": true,
+      "request_fields": {
+        "name": "Чемодан",
+        "description": "Товар, добавленный вручную для проверки приложения.",
+        "urls": "[]"
+      },
+      "status_code": 201,
+      "content_type": "application/json",
+      "raw_response": "{\"id\":\"manual-03293e9c30aa4df5bc3cfef1ab5ecc32\",\"name\":\"Чемодан\",\"description\":\"Товар, добавленный вручную для проверки приложения.\",\"images\":[{\"id\":\"manual-03293e9c30aa4df5bc3cfef1ab5ecc32-1\",\"url\":\"/api/media/manual-03293e9c30aa4df5bc3cfef1ab5ecc32-1\",\"width\":1200,\"height\":1600}]}",
+      "seconds": 0.02
+    },
+    {
+      "name": "manual_canonical_media",
+      "method": "GET",
+      "path": "/api/media/manual-03293e9c30aa4df5bc3cfef1ab5ecc32-1",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "image/jpeg",
+      "response_bytes": 69129,
+      "response_sha256": "27fc900fa50dc033f6c242c5ccad182741a34df66ccffa17e503700c02d4ec2b",
+      "seconds": 0.0
+    },
+    {
+      "name": "analyze_manual_upload",
+      "method": "POST",
+      "path": "/api/analyze",
+      "passed": true,
+      "request_json": {
+        "product_id": "manual-03293e9c30aa4df5bc3cfef1ab5ecc32",
+        "image_ids": [
+          "manual-03293e9c30aa4df5bc3cfef1ab5ecc32-1"
+        ]
+      },
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"features\":[{\"image_id\":\"manual-03293e9c30aa4df5bc3cfef1ab5ecc32-1\",\"description\":\"На боковой стороне чемодана видна надпись TORBER.\",\"bbox\":[537,534,637,572],\"id\":\"feature-1\"},{\"image_id\":\"manual-03293e9c30aa4df5bc3cfef1ab5ecc32-1\",\"description\":\"На чемодане виден ручной телескопический выдвижной механизм.\",\"bbox\":[399,48,595,472],\"id\":\"feature-2\"},{\"image_id\":\"manual-03293e9c30aa4df5bc3cfef1ab5ecc32-1\",\"description\":\"На чемодане видны четыре колеса с серыми ободками.\",\"bbox\":[263,893,722,952],\"id\":\"feature-3\"},{\"image_id\":\"manual-03293e9c30aa4df5bc3cfef1ab5ecc32-1\",\"description\":\"На корпусе чемодана виден узор из диагональных полос и ромбов.\",\"bbox\":[273,472,722,900],\"id\":\"feature-4\"}]}",
+      "seconds": 5.67
+    },
+    {
+      "name": "public_url_import",
+      "method": "POST",
+      "path": "/api/products/manual",
+      "passed": true,
+      "request_fields": {
+        "name": "Объект на фотографии",
+        "description": "Пример загрузки по прямой публичной ссылке.",
+        "urls": "[\"https://httpbin.org/image/jpeg\"]"
+      },
+      "status_code": 201,
+      "content_type": "application/json",
+      "raw_response": "{\"id\":\"manual-d11239ddd1c84044b90fdf72b044e41d\",\"name\":\"Объект на фотографии\",\"description\":\"Пример загрузки по прямой публичной ссылке.\",\"images\":[{\"id\":\"manual-d11239ddd1c84044b90fdf72b044e41d-1\",\"url\":\"/api/media/manual-d11239ddd1c84044b90fdf72b044e41d-1\",\"width\":239,\"height\":178}]}",
+      "seconds": 0.72
+    },
+    {
+      "name": "public_url_canonical_media",
+      "method": "GET",
+      "path": "/api/media/manual-d11239ddd1c84044b90fdf72b044e41d-1",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "image/jpeg",
+      "response_bytes": 20263,
+      "response_sha256": "aa3e15464c8a5027c3297026294e179260362b41df8f742c41ca70d035546fc9",
+      "seconds": 0.0
+    },
+    {
+      "name": "analyze_public_url",
+      "method": "POST",
+      "path": "/api/analyze",
+      "passed": true,
+      "request_json": {
+        "product_id": "manual-d11239ddd1c84044b90fdf72b044e41d",
+        "image_ids": [
+          "manual-d11239ddd1c84044b90fdf72b044e41d-1"
+        ]
+      },
+      "status_code": 422,
+      "content_type": "application/json",
+      "raw_response": "{\"detail\":{\"code\":\"insufficient_visual_evidence\",\"message\":\"На выбранных фото недостаточно различимых деталей для анализа. Выберите другие ракурсы.\"}}",
+      "seconds": 1.19
+    },
+    {
+      "name": "reject_private_url",
+      "method": "POST",
+      "path": "/api/products/manual",
+      "passed": true,
+      "request_fields": {
+        "name": "Проверка адреса",
+        "urls": "[\"http://127.0.0.1/private.jpg\"]"
+      },
+      "status_code": 422,
+      "content_type": "application/json",
+      "raw_response": "{\"detail\":{\"code\":\"private_image_url\",\"message\":\"Ссылка должна вести на общедоступный сервер в интернете.\"}}",
+      "seconds": 0.0
+    }
+  ],
+  "finished_at_utc": "2026-11-05T10:49:56.017807+00:00",
+  "passed": true
+}

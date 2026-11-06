@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"35472730299_1\",\n      \"description\": \"На бедре черных леггинсов виден белый логотип DEMIX.\",\n      \"bbox\": [710, 117, 776, 167]\n    },\n    {\n      \"image_id\": \"35472730299_9\",\n      \"description\": \"На бедре черных леггинсов виден белый логотип DEMIX.\",\n      \"bbox\": [710, 117, 776, 167]\n    },\n    {\n      \"image_id\": \"35472730299_10\",\n      \"description\": \"На бедре черных леггинсов виден белый логотип DEMIX.\",\n      \"bbox\": [476, 144, 542, 194]\n    },\n    {\n      \"image_id\": \"35472730299_13\",\n      \"description\": \"На бедре черных леггинсов виден белый логотип DEMIX.\",\n      \"bbox\": [476, 144, 542, 194]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793875328,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 311,
+    "prompt_tokens": 5588,
+    "total_tokens": 5899,
+    "prompt_tokens_details": {
+      "cached_tokens": 494
+    }
+  },
+  "id": "chatcmpl-hhKQ3EcKZaznjBJPsTGi1XCdnPCcGsfm",
+  "timings": {
+    "cache_n": 494,
+    "prompt_n": 5094,
+    "prompt_ms": 4004.969,
+    "prompt_per_token_ms": 0.7862129956811935,
+    "prompt_per_second": 1271.919957432879,
+    "predicted_n": 311,
+    "predicted_ms": 3702.447,
+    "predicted_per_token_ms": 11.943377419354839,
+    "predicted_per_second": 83.72840988675868
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"43358020299_1\",\n      \"description\": \"Чемодан светло-серого цвета с текстурой из диагональных линий и геометрических фигур.\",\n      \"bbox\": [\n        270,\n        47,\n        730,\n        947\n      ]\n    },\n    {\n      \"image_id\": \"43358020299_3\",\n      \"description\": \"Внутренняя часть чемодана раскрыта, показывая два отделения: левое с сетчатым карманом и правое с ремнями в форме X.\",\n      \"bbox\": [\n        80,\n        270,\n        910,\n        728\n      ]\n    },\n    {\n      \"image_id\": \"43358020299_7\",\n      \"description\": \"На корпусе чемодана установлен цифровой замок TSA с тремя цифровыми колесиками и металлическими застежками.\",\n      \"bbox\": [\n        340,\n        515,\n        780,\n        704\n      ]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793873773,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 305,
+    "prompt_tokens": 5354,
+    "total_tokens": 5659,
+    "prompt_tokens_details": {
+      "cached_tokens": 315
+    }
+  },
+  "id": "chatcmpl-DTkN7iBZbtOxIAaYkoBcZFjpowpAzul8",
+  "timings": {
+    "cache_n": 315,
+    "prompt_n": 5039,
+    "prompt_ms": 1653.981,
+    "prompt_per_token_ms": 0.32823595951577694,
+    "prompt_per_second": 3046.58880603828,
+    "predicted_n": 305,
+    "predicted_ms": 2307.788,
+    "predicted_per_token_ms": 7.591407894736842,
+    "predicted_per_second": 131.72787101761514
+  }
+}

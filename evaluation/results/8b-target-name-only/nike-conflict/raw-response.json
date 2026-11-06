@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"43603530299_1\",\n      \"description\": \"На боковой стороне кеды видна темно-серая полоса с контрастной швейной строчкой.\",\n      \"bbox\": [300, 580, 875, 740]\n    },\n    {\n      \"image_id\": \"43603530299_1\",\n      \"description\": \"На подошве кеды видна светлая рифленая поверхность с оранжевой полосой по краю.\",\n      \"bbox\": [85, 738, 885, 850]\n    },\n    {\n      \"image_id\": \"43603530299_3\",\n      \"description\": \"На язычке кеды видна светло-зеленая окантовка.\",\n      \"bbox\": [425, 315, 560, 360]\n    },\n    {\n      \"image_id\": \"43603530299_3\",\n      \"description\": \"На кедах видны разноцветные шнурки с оранжевыми, фиолетовыми и белыми нитками.\",\n      \"bbox\": [280, 450, 780, 670]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793875379,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 348,
+    "prompt_tokens": 3560,
+    "total_tokens": 3908,
+    "prompt_tokens_details": {
+      "cached_tokens": 491
+    }
+  },
+  "id": "chatcmpl-YDn8PF9SGvsISy9cyMrHfaGsm8OGZZNw",
+  "timings": {
+    "cache_n": 491,
+    "prompt_n": 3069,
+    "prompt_ms": 2398.183,
+    "prompt_per_token_ms": 0.7814216357119583,
+    "prompt_per_second": 1279.7188538155763,
+    "predicted_n": 348,
+    "predicted_ms": 4003.808,
+    "predicted_per_token_ms": 11.538351585014409,
+    "predicted_per_second": 86.66749254709516
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "source_url": "https://storage.googleapis.com/generativeai-downloads/images/scones.jpg",
+  "product": {
+    "id": "manual-02511a8efffb4ffdb5cccc6bcf3b6b81",
+    "name": "Выпечка на фотографии",
+    "description": "",
+    "images": [
+      {
+        "id": "manual-02511a8efffb4ffdb5cccc6bcf3b6b81-1",
+        "url": "/api/media/manual-02511a8efffb4ffdb5cccc6bcf3b6b81-1",
+        "width": 1280,
+        "height": 853
+      }
+    ]
+  },
+  "request": {
+    "product_id": "manual-02511a8efffb4ffdb5cccc6bcf3b6b81",
+    "image_ids": [
+      "manual-02511a8efffb4ffdb5cccc6bcf3b6b81-1"
+    ]
+  },
+  "status": 200,
+  "seconds": 5.86,
+  "response": {
+    "features": [
+      {
+        "image_id": "manual-02511a8efffb4ffdb5cccc6bcf3b6b81-1",
+        "description": "На фотографии видны пять круглых сдобных изделий с фиолетовыми ягодами, лежащих на белой бумаге с фиолетовым узором.",
+        "bbox": [
+          126,
+          173,
+          697,
+          786
+        ],
+        "id": "feature-1"
+      },
+      {
+        "image_id": "manual-02511a8efffb4ffdb5cccc6bcf3b6b81-1",
+        "description": "На фотографии видна металлическая ложка с надписью 'LET'S JAM' на ручке, лежащая на белой бумаге.",
+        "bbox": [
+          267,
+          502,
+          387,
+          950
+        ],
+        "id": "feature-2"
+      },
+      {
+        "image_id": "manual-02511a8efffb4ffdb5cccc6bcf3b6b81-1",
+        "description": "На фотографии видна темная керамическая чашка с синими ягодами внутри, расположенная на белой бумаге.",
+        "bbox": [
+          323,
+          613,
+          514,
+          903
+        ],
+        "id": "feature-3"
+      },
+      {
+        "image_id": "manual-02511a8efffb4ffdb5cccc6bcf3b6b81-1",
+        "description": "На фотографии видны два белых керамических стакана с жидкостью, один с темной, другой с светлой, расположенными на белой бумаге.",
+        "bbox": [
+          159,
+          73,
+          713,
+          950
+        ],
+        "id": "feature-4"
+      }
+    ]
+  }
+}

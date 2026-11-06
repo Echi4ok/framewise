@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"40016330299_1\",\n      \"description\": \"На передней части кепки расположен вышитый прямоугольный нашивной знак с изображением персонажа и надписью 'SAM'.\",\n      \"bbox\": [273, 343, 527, 543]\n    },\n    {\n      \"image_id\": \"40016330299_1\",\n      \"description\": \"На боковой части кепки видна черная сетчатая ткань с оранжевой окантовкой.\",\n      \"bbox\": [657, 267, 917, 587]\n    },\n    {\n      \"image_id\": \"40016330299_4\",\n      \"description\": \"На внутренней стороне кепки видна оранжевая окантовка с повторяющейся надписью '[× CAPSLAB]'.\",\n      \"bbox\": [327, 287, 857, 647]\n    },\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"На нашивке видна вышитая надпись 'SAM' желтым цветом в левом верхнем углу.\",\n      \"bbox\": [176, 243, 301, 317]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793875306,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 359,
+    "prompt_tokens": 5005,
+    "total_tokens": 5364,
+    "prompt_tokens_details": {
+      "cached_tokens": 506
+    }
+  },
+  "id": "chatcmpl-3UDSu7nwOuFLSW3fPylmvHgQlzLOCc1a",
+  "timings": {
+    "cache_n": 506,
+    "prompt_n": 4499,
+    "prompt_ms": 3662.155,
+    "prompt_per_token_ms": 0.8139931095799067,
+    "prompt_per_second": 1228.5116277164675,
+    "predicted_n": 359,
+    "predicted_ms": 4242.957,
+    "predicted_per_token_ms": 11.851835195530727,
+    "predicted_per_second": 84.37511857885903
+  }
+}

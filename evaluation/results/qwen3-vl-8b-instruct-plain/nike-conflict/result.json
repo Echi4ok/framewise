@@ -1,0 +1,98 @@
+{
+  "case": "nike-conflict",
+  "model": "qwen3-vl:8b-instruct",
+  "variant": "plain",
+  "catalog_included": true,
+  "prompt": "Analyze the product photos. Find 3-5 product features. Write short Russian descriptions with bounding boxes normalized 0..1000 [x1,y1,x2,y2] and exact image_id. Return status and features as JSON.",
+  "image_ids": [
+    "43603530299_1",
+    "43603530299_3"
+  ],
+  "endpoint": "http://127.0.0.1:11436/v1",
+  "prompt_sha256": "f390e89b1c740acbad81fa299064bffc4aeb3c36b267218d15144008388f1699",
+  "target_name_included": false,
+  "input_images": [
+    {
+      "image_id": "43603530299_1",
+      "path": "data/images/43603530299_1.jpg",
+      "source_sha256": "5a0f73ee16c643e523923750ab55d1a6bf5e1acfb5c2309c26d95f00e80591be",
+      "canonical_jpeg_sha256": "fbfbc1d1c415c99a17b46d130174f95b097ab6294c1fa36febf45f558f8bc6eb",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "43603530299_3",
+      "path": "data/images/43603530299_3.jpg",
+      "source_sha256": "c68c92f6a2ec1b69420cf4a5795f0dc618716c6467f2dd7203e60efdc3daf60c",
+      "canonical_jpeg_sha256": "0336125825ae218604ce0f2e0e71358d7a15dd3f047f002836f81a9bcae78233",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    }
+  ],
+  "sent_image_sha256": [
+    "fbfbc1d1c415c99a17b46d130174f95b097ab6294c1fa36febf45f558f8bc6eb",
+    "0336125825ae218604ce0f2e0e71358d7a15dd3f047f002836f81a9bcae78233"
+  ],
+  "seconds": 7.125,
+  "usage": {
+    "completion_tokens": 366,
+    "prompt_tokens": 3332,
+    "total_tokens": 3698,
+    "prompt_tokens_details": {
+      "cached_tokens": 75
+    }
+  },
+  "finish_reason": "stop",
+  "result": {
+    "status": "ok",
+    "features": [
+      {
+        "image_id": "43603530299_1",
+        "description": "Кеды с высоким верхом и яркими шнурками, выполненные из ткани с контрастной прострочкой.",
+        "bbox": [
+          85,
+          468,
+          915,
+          853
+        ]
+      },
+      {
+        "image_id": "43603530299_3",
+        "description": "Кеды с высоким верхом и яркими шнурками, выполненные из ткани с контрастной прострочкой.",
+        "bbox": [
+          85,
+          317,
+          915,
+          853
+        ]
+      },
+      {
+        "image_id": "43603530299_3",
+        "description": "Кеды с высоким верхом и яркими шнурками, выполненные из ткани с контрастной прострочкой.",
+        "bbox": [
+          259,
+          317,
+          875,
+          853
+        ]
+      },
+      {
+        "image_id": "43603530299_1",
+        "description": "Кеды с высоким верхом и яркими шнурками, выполненные из ткани с контрастной прострочкой.",
+        "bbox": [
+          85,
+          468,
+          915,
+          853
+        ]
+      }
+    ]
+  },
+  "valid": false
+}

@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Вышитый оранжевый кант вокруг патчей.\",\n      \"bbox\": [70, 183, 900, 805]\n    },\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Вышитая надпись 'SAM' желтым цветом в левом верхнем углу патча.\",\n      \"bbox\": [160, 240, 290, 300]\n    },\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Вышитый персонаж с оранжевой шерстью и белыми руками, держащий оружие.\",\n      \"bbox\": [130, 260, 750, 740]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793875297,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 248,
+    "prompt_tokens": 1999,
+    "total_tokens": 2247,
+    "prompt_tokens_details": {
+      "cached_tokens": 3
+    }
+  },
+  "id": "chatcmpl-HvFNCbnidOxlmc89IGt0H1iQLdt38Ngn",
+  "timings": {
+    "cache_n": 3,
+    "prompt_n": 1996,
+    "prompt_ms": 1326.106,
+    "prompt_per_token_ms": 0.6643817635270541,
+    "prompt_per_second": 1505.1587128027475,
+    "predicted_n": 248,
+    "predicted_ms": 2855.197,
+    "predicted_per_token_ms": 11.559502024291499,
+    "predicted_per_second": 86.50891689785328
+  }
+}

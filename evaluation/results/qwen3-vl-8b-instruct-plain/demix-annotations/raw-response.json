@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"35472730299_9\",\n      \"description\": \"Сетчатые вставки обеспечивают дополнительный приток воздуха, чтобы ребенку не было жарко на тренировке.\",\n      \"bbox\": [\n        98,\n        277,\n        412,\n        437\n      ]\n    },\n    {\n      \"image_id\": \"35472730299_10\",\n      \"description\": \"Светоотражающие детали делают ребенка более заметным во время вечерних тренировок на открытых площадках. Занятия спортом станут более безопасными.\",\n      \"bbox\": [\n        78,\n        537,\n        572,\n        700\n      ]\n    },\n    {\n      \"image_id\": \"35472730299_1\",\n      \"description\": \"Плотная посадка и эластичная ткань обеспечивают комфорт и надежную фиксацию на талии.\",\n      \"bbox\": [\n        277,\n        100,\n        750,\n        785\n      ]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793875289,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 298,
+    "prompt_tokens": 5528,
+    "total_tokens": 5826,
+    "prompt_tokens_details": {
+      "cached_tokens": 73
+    }
+  },
+  "id": "chatcmpl-dU59JBh7peEzNy26fXF8wX0G95VqPaDQ",
+  "timings": {
+    "cache_n": 73,
+    "prompt_n": 5455,
+    "prompt_ms": 3692.249,
+    "prompt_per_token_ms": 0.6768559120073326,
+    "prompt_per_second": 1477.4193181445783,
+    "predicted_n": 298,
+    "predicted_ms": 3657.762,
+    "predicted_per_token_ms": 12.31569696969697,
+    "predicted_per_second": 81.19719106929318
+  }
+}

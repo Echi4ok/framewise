@@ -1,0 +1,227 @@
+{
+  "base_url": "http://127.0.0.1:8080",
+  "started_at_utc": "2026-11-05T10:57:39.515736+00:00",
+  "scope": "Real API/model calls; response contracts only. Review boxes and descriptions visually.",
+  "checks": [
+    {
+      "name": "health",
+      "method": "GET",
+      "path": "/api/health",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"status\":\"ok\",\"model\":\"qwen3-vl:8b-instruct\",\"provider\":\"http://model:11434/v1\",\"catalog_products\":15,\"manual_ttl_seconds\":3600.0,\"max_photos\":20,\"max_analyze_photos\":4}",
+      "seconds": 0.0
+    },
+    {
+      "name": "catalog",
+      "method": "GET",
+      "path": "/api/products",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "[{\"id\":\"39506410299\",\"name\":\"Шарф унисекс FALKE\"},{\"id\":\"40054730299\",\"name\":\"Бейсболка AMERICAN NEEDLE 44747A-MILB Minor League Baseball Archive MILB\"},{\"id\":\"40016330299\",\"name\":\"Бейсболка с сеточкой CAPSLAB CL/LOO/1/SAM1 Looney Tunes Yosemite Sam\"},{\"id\":\"43358020299\",\"name\":\"Чемодан TORBER СЕЛИГЕР 35 л\"},{\"id\":\"34838390299\",\"name\":\"Очки поляризационные мужские Jaxon okx53 sm серое стекло\"},{\"id\":\"43603530299\",\"name\":\"Кеды женские Nike Air Force 1\"},{\"id\":\"42351410299\",\"name\":\"Кроссовки мужские Nike Air Zoom GT Cut Academy Ep\"},{\"id\":\"44077690299\",\"name\":\"Кеды высокие женские Nike Blazer Mid 77\"},{\"id\":\"44014520299\",\"name\":\"Кроссовки мужские Arc'teryx Sylan\"},{\"id\":\"40917920299\",\"name\":\"Кроссовки Adidas Samba Messi Gold\"},{\"id\":\"33578610299\",\"name\":\"Костюм мужской Demix\"},{\"id\":\"42153320299\",\"name\":\"Куртка унисекс Nothomme 24W003 WINDBREAKER\"},{\"id\":\"35472730299\",\"name\":\"Тайтсы для мальчиков Demix\"},{\"id\":\"35950190299\",\"name\":\"Толстовка мужская adidas\"},{\"id\":\"42310740299\",\"name\":\"Костюм bodo\"}]",
+      "seconds": 0.01
+    },
+    {
+      "name": "catalog_cap",
+      "method": "GET",
+      "path": "/api/products/40016330299",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"id\":\"40016330299\",\"name\":\"Бейсболка с сеточкой CAPSLAB CL/LOO/1/SAM1 Looney Tunes Yosemite Sam\",\"description\":\"Черная бейсболка Yosemite Sam из коллекции Looney Tunes. Модель сшита из хлопка и полиэстера. Твердая передняя панель украшена нашивкой с оранжевой окантовкой, на которой изображен колоритный персонаж Йоземит Сэм и желтая надпись Sam. Герой, вооруженный пистолетом, хитро смотрит с бейсболок Capslab. На сетке сбоку — тканевая нашивка с желтой надписью Yosemite Sam. С другой стороны бейсболки — резиновый ярлычок с названием бренда. Внутренняя часть козырька оранжевая. Размер головного убора регулируется при помощи пластиковой застежки. Рядом — резиновый ярлычок с логотипом марки. Внутренние швы обшиты брендированной тканью. Длина козырька 6.5 см, глубина бейсболки 13 см.\",\"images\":[{\"id\":\"catalog-40016330299-1\",\"url\":\"/api/media/catalog-40016330299-1\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-40016330299-2\",\"url\":\"/api/media/catalog-40016330299-2\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-40016330299-3\",\"url\":\"/api/media/catalog-40016330299-3\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-40016330299-4\",\"url\":\"/api/media/catalog-40016330299-4\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-40016330299-5\",\"url\":\"/api/media/catalog-40016330299-5\",\"width\":1200,\"height\":1600}]}",
+      "seconds": 0.0
+    },
+    {
+      "name": "catalog_suitcase",
+      "method": "GET",
+      "path": "/api/products/43358020299",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"id\":\"43358020299\",\"name\":\"Чемодан TORBER СЕЛИГЕР 35 л\",\"description\":\"Чемодан TORBER СЕЛИГЕР<br><br>Мягкие линии этого чемодана словно застывшая водная рябь на поверхности озера. Каждая грань этой текстуры как легкий ветер, пробежавший по Селигеру.<br><br>Как Селигер не отпускает путешественника, даря все новые и новые повороты, так и наш чемодан проведет вас сквозь стихию личных открытий с неизменным комфортом. Это не просто багаж - это ваш надежный плот в реке жизни.<br><br>Позвольте себе роскошь исследовать мир, не боясь потерять ориентиры стиля вместе с чемоданом TORBER СЕЛИГЕР.<br><br>Легкая регулируемая телескопическая ручка и система из 4 двойных колес, вращающихся на 360 градусов, обеспечивают мягкий ход и свободное движение во всех направлениях.<br><br>Чемодан полностью раскрывается на 2 вместительных отделения, с перегородкой на молнии и ремнями в форме X для надежной фиксации вещей на месте.<br><br>Использование цифрового замка системы TSA позволяет сотрудникам таможни осуществлять инспекцию багажа без повреждения чемодана.<br><br>Размеры чемодана составляют 38х20,5х55 см., а объем - 35 литров.<br><br>- Материал: полипропилен;<br>- 4 двойных колеса, вращающихся на 360 градусов;<br>- Телескопическая ручка с фиксатором;<br>- 2 отделения: одно с фиксирующими ремнями, второе на молнии с карманом;<br>- Замок TSA для сохранности ваших вещей.\",\"images\":[{\"id\":\"catalog-43358020299-1\",\"url\":\"/api/media/catalog-43358020299-1\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-2\",\"url\":\"/api/media/catalog-43358020299-2\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-3\",\"url\":\"/api/media/catalog-43358020299-3\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-4\",\"url\":\"/api/media/catalog-43358020299-4\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-5\",\"url\":\"/api/media/catalog-43358020299-5\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-6\",\"url\":\"/api/media/catalog-43358020299-6\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-7\",\"url\":\"/api/media/catalog-43358020299-7\",\"width\":1200,\"height\":1600},{\"id\":\"catalog-43358020299-8\",\"url\":\"/api/media/catalog-43358020299-8\",\"width\":1200,\"height\":1600}]}",
+      "seconds": 0.0
+    },
+    {
+      "name": "suggest_five_photos",
+      "method": "POST",
+      "path": "/api/suggest",
+      "passed": true,
+      "request_json": {
+        "product_id": "40016330299",
+        "image_ids": [
+          "catalog-40016330299-1",
+          "catalog-40016330299-2",
+          "catalog-40016330299-3",
+          "catalog-40016330299-4",
+          "catalog-40016330299-5"
+        ]
+      },
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"selected_image_ids\":[\"catalog-40016330299-1\",\"catalog-40016330299-3\",\"catalog-40016330299-4\"],\"reason\":\"Фото A показывает переднюю часть кепки с нашивкой, Фото C — заднюю сторону с сеткой и регулировочным механизмом, Фото D — боковой вид, демонстрирующий цветовую схему и конструкцию. Эти три фото дают полное представление о внешнем виде и деталях изделия.\"}",
+      "seconds": 69.61
+    },
+    {
+      "name": "analyze_single_photo",
+      "method": "POST",
+      "path": "/api/analyze",
+      "passed": true,
+      "request_json": {
+        "product_id": "40016330299",
+        "image_ids": [
+          "catalog-40016330299-4"
+        ]
+      },
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"features\":[{\"image_id\":\"catalog-40016330299-4\",\"description\":\"На задней части бейсболки видна белая этикетка с надписью CAPSLAB.\",\"bbox\":[417,225,548,287],\"id\":\"feature-1\"},{\"image_id\":\"catalog-40016330299-4\",\"description\":\"На бейсболке видна оранжевая сетка с черными швами.\",\"bbox\":[350,207,890,644],\"id\":\"feature-2\"},{\"image_id\":\"catalog-40016330299-4\",\"description\":\"На бейсболке видна оранжевая окантовка с надписью CAPSLAB.\",\"bbox\":[357,287,877,644],\"id\":\"feature-3\"}]}",
+      "seconds": 12.89
+    },
+    {
+      "name": "reanalyze_four_photos",
+      "method": "POST",
+      "path": "/api/analyze",
+      "passed": true,
+      "request_json": {
+        "product_id": "40016330299",
+        "image_ids": [
+          "catalog-40016330299-1",
+          "catalog-40016330299-2",
+          "catalog-40016330299-4",
+          "catalog-40016330299-5"
+        ]
+      },
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"features\":[{\"image_id\":\"catalog-40016330299-1\",\"description\":\"На передней части бейсболки пришита квадратная нашивка с изображением персонажа и надписью 'SAM'.\",\"bbox\":[278,334,526,535],\"id\":\"feature-1\"},{\"image_id\":\"catalog-40016330299-2\",\"description\":\"На боковой части бейсболки пришит черный прямоугольный ярлык с надписью 'YOSEMITE SAM' желтым цветом.\",\"bbox\":[107,506,198,574],\"id\":\"feature-2\"},{\"image_id\":\"catalog-40016330299-4\",\"description\":\"На внутренней стороне бейсболки видна оранжевая тканевая лента с повторяющейся надписью '[× CAPSLAB]'.\",\"bbox\":[387,265,809,641],\"id\":\"feature-3\"},{\"image_id\":\"catalog-40016330299-5\",\"description\":\"На нашивке изображен персонаж с длинными рыжими волосами и надписью 'SAM' в верхнем левом углу.\",\"bbox\":[178,240,762,739],\"id\":\"feature-4\"}]}",
+      "seconds": 16.78
+    },
+    {
+      "name": "reject_empty_selection",
+      "method": "POST",
+      "path": "/api/analyze",
+      "passed": true,
+      "request_json": {
+        "product_id": "40016330299",
+        "image_ids": []
+      },
+      "status_code": 422,
+      "content_type": "application/json",
+      "raw_response": "{\"detail\":[{\"type\":\"too_short\",\"loc\":[\"body\",\"image_ids\"],\"msg\":\"List should have at least 1 item after validation, not 0\",\"input\":[],\"ctx\":{\"field_type\":\"List\",\"min_length\":1,\"actual_length\":0}}]}",
+      "seconds": 0.0
+    },
+    {
+      "name": "download_manual_source",
+      "method": "GET",
+      "path": "/api/media/catalog-43358020299-1",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "image/jpeg",
+      "response_bytes": 69037,
+      "response_sha256": "e417adebee51ba683747b55491673e864f9ecc2ec57c3a3c0d5290814c3e76fd",
+      "seconds": 0.02
+    },
+    {
+      "name": "manual_upload",
+      "method": "POST",
+      "path": "/api/products/manual",
+      "passed": true,
+      "request_fields": {
+        "name": "Чемодан",
+        "description": "Товар, добавленный вручную для проверки приложения.",
+        "urls": "[]"
+      },
+      "status_code": 201,
+      "content_type": "application/json",
+      "raw_response": "{\"id\":\"manual-0bf8edae2c514aa8be1bde9123c1f3a9\",\"name\":\"Чемодан\",\"description\":\"Товар, добавленный вручную для проверки приложения.\",\"images\":[{\"id\":\"manual-0bf8edae2c514aa8be1bde9123c1f3a9-1\",\"url\":\"/api/media/manual-0bf8edae2c514aa8be1bde9123c1f3a9-1\",\"width\":1200,\"height\":1600}]}",
+      "seconds": 0.01
+    },
+    {
+      "name": "manual_canonical_media",
+      "method": "GET",
+      "path": "/api/media/manual-0bf8edae2c514aa8be1bde9123c1f3a9-1",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "image/jpeg",
+      "response_bytes": 69129,
+      "response_sha256": "27fc900fa50dc033f6c242c5ccad182741a34df66ccffa17e503700c02d4ec2b",
+      "seconds": 0.0
+    },
+    {
+      "name": "analyze_manual_upload",
+      "method": "POST",
+      "path": "/api/analyze",
+      "passed": true,
+      "request_json": {
+        "product_id": "manual-0bf8edae2c514aa8be1bde9123c1f3a9",
+        "image_ids": [
+          "manual-0bf8edae2c514aa8be1bde9123c1f3a9-1"
+        ]
+      },
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"features\":[{\"image_id\":\"manual-0bf8edae2c514aa8be1bde9123c1f3a9-1\",\"description\":\"На боковой стороне чемодана виден логотип 'TORBER'.\",\"bbox\":[537,530,624,578],\"id\":\"feature-1\"},{\"image_id\":\"manual-0bf8edae2c514aa8be1bde9123c1f3a9-1\",\"description\":\"На чемодане видны четыре колеса с серебристыми спицами.\",\"bbox\":[267,880,715,947],\"id\":\"feature-2\"},{\"image_id\":\"manual-0bf8edae2c514aa8be1bde9123c1f3a9-1\",\"description\":\"На чемодане видна текстура в виде диагональных полос и ромбов.\",\"bbox\":[276,470,715,890],\"id\":\"feature-3\"}]}",
+      "seconds": 13.44
+    },
+    {
+      "name": "public_url_import",
+      "method": "POST",
+      "path": "/api/products/manual",
+      "passed": true,
+      "request_fields": {
+        "name": "Тушь для ресниц",
+        "description": "Пример загрузки по прямой публичной ссылке.",
+        "urls": "[\"https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp\"]"
+      },
+      "status_code": 201,
+      "content_type": "application/json",
+      "raw_response": "{\"id\":\"manual-f6523152e934434293af22bd67c9b399\",\"name\":\"Тушь для ресниц\",\"description\":\"Пример загрузки по прямой публичной ссылке.\",\"images\":[{\"id\":\"manual-f6523152e934434293af22bd67c9b399-1\",\"url\":\"/api/media/manual-f6523152e934434293af22bd67c9b399-1\",\"width\":1000,\"height\":1000}]}",
+      "seconds": 0.45
+    },
+    {
+      "name": "public_url_canonical_media",
+      "method": "GET",
+      "path": "/api/media/manual-f6523152e934434293af22bd67c9b399-1",
+      "passed": true,
+      "status_code": 200,
+      "content_type": "image/jpeg",
+      "response_bytes": 47041,
+      "response_sha256": "aa5373bbfde38fb8d2fa1f64765d6e24107937d94a0706714b96e26096689d65",
+      "seconds": 0.0
+    },
+    {
+      "name": "analyze_public_url",
+      "method": "POST",
+      "path": "/api/analyze",
+      "passed": true,
+      "request_json": {
+        "product_id": "manual-f6523152e934434293af22bd67c9b399",
+        "image_ids": [
+          "manual-f6523152e934434293af22bd67c9b399-1"
+        ]
+      },
+      "status_code": 200,
+      "content_type": "application/json",
+      "raw_response": "{\"features\":[{\"image_id\":\"manual-f6523152e934434293af22bd67c9b399-1\",\"description\":\"На черной тубе туши видна светло-зеленая надпись 'essence' и название продукта 'Lash PRINCESS'.\",\"bbox\":[280,215,426,879],\"id\":\"feature-1\"},{\"image_id\":\"manual-f6523152e934434293af22bd67c9b399-1\",\"description\":\"На черной крышке туши виден светло-зеленый орнамент в виде стилизованного сердца и завитков.\",\"bbox\":[558,640,712,879],\"id\":\"feature-2\"},{\"image_id\":\"manual-f6523152e934434293af22bd67c9b399-1\",\"description\":\"На черной тубе туши виден светло-зеленый круглый значок с надписью 'false lash effect mascara'.\",\"bbox\":[305,648,402,765],\"id\":\"feature-3\"},{\"image_id\":\"manual-f6523152e934434293af22bd67c9b399-1\",\"description\":\"На черной тубе туши видна светло-зеленая надпись 'Lash' в стилизованном шрифте.\",\"bbox\":[280,456,407,563],\"id\":\"feature-4\"}]}",
+      "seconds": 8.81
+    },
+    {
+      "name": "reject_private_url",
+      "method": "POST",
+      "path": "/api/products/manual",
+      "passed": true,
+      "request_fields": {
+        "name": "Проверка адреса",
+        "urls": "[\"http://127.0.0.1/private.jpg\"]"
+      },
+      "status_code": 422,
+      "content_type": "application/json",
+      "raw_response": "{\"detail\":{\"code\":\"private_image_url\",\"message\":\"Ссылка должна вести на общедоступный сервер в интернете.\"}}",
+      "seconds": 0.02
+    }
+  ],
+  "finished_at_utc": "2026-11-05T10:59:41.635832+00:00",
+  "passed": true
+}

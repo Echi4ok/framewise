@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"selected_labels\": [\"A\", \"B\"],\n  \"reason\": \"Фото A и B показывают обувь с разных ракурсов: A — боковой вид, B — передний вид. Это дополняет друг друга и даёт полное представление о продукте без рекламы или текстовых слайдов.\"\n}"
+      }
+    }
+  ],
+  "created": 1793875331,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 78,
+    "prompt_tokens": 1236,
+    "total_tokens": 1314,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    }
+  },
+  "id": "chatcmpl-umQurD6XIjCtR6TlS7bxftsjUm9MTQvO",
+  "timings": {
+    "cache_n": 4,
+    "prompt_n": 1232,
+    "prompt_ms": 747.852,
+    "prompt_per_token_ms": 0.6070227272727272,
+    "prompt_per_second": 1647.384776667041,
+    "predicted_n": 78,
+    "predicted_ms": 808.188,
+    "predicted_per_token_ms": 10.495948051948051,
+    "predicted_per_second": 95.27486178958361
+  }
+}

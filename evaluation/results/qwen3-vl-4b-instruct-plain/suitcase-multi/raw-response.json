@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"43358020299_1\",\n      \"description\": \"Регулируемая телескопическая ручка с фиксатором, обеспечивающая комфортный транспорт при перемещении чемодана.\",\n      \"bbox\": [398, 50, 595, 472]\n    },\n    {\n      \"image_id\": \"43358020299_1\",\n      \"description\": \"Четыре двойных колеса, вращающихся на 360 градусов, обеспечивают плавное и свободное движение в любом направлении.\",\n      \"bbox\": [267, 876, 720, 949]\n    },\n    {\n      \"image_id\": \"43358020299_3\",\n      \"description\": \"Внутреннее пространство чемодана разделено на два отделения: одно с фиксирующими ремнями в форме X, другое на молнии с карманом.\",\n      \"bbox\": [85, 270, 910, 725]\n    },\n    {\n      \"image_id\": \"43358020299_7\",\n      \"description\": \"Цифровой замок системы TSA, позволяющий сотрудникам таможни проводить инспекцию без повреждения чемодана.\",\n      \"bbox\": [410, 540, 785, 704]\n    },\n    {\n      \"image_id\": \"43358020299_1\",\n      \"description\": \"Материал чемодана — полипропилен, обеспечивающий легкость и прочность при длительном использовании.\",\n      \"bbox\": [270, 472, 720, 949]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793873709,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 464,
+    "prompt_tokens": 5108,
+    "total_tokens": 5572,
+    "prompt_tokens_details": {
+      "cached_tokens": 69
+    }
+  },
+  "id": "chatcmpl-y0nxWCsxfmxzp6LEstOdjScSHqlBtkL2",
+  "timings": {
+    "cache_n": 69,
+    "prompt_n": 5039,
+    "prompt_ms": 4397.754,
+    "prompt_per_token_ms": 0.8727434014685453,
+    "prompt_per_second": 1145.8121577514341,
+    "predicted_n": 464,
+    "predicted_ms": 11388.132,
+    "predicted_per_token_ms": 24.59639740820734,
+    "predicted_per_second": 40.656360498807004
+  }
+}

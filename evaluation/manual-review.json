@@ -1,0 +1,73 @@
+{
+  "protocol": "Manual inspection of source photos and overlays for the frozen production prompt. T means the entire description is supported in pixels, B means the rectangle reasonably encloses the described detail, P means a physical target-product feature, D marks an additional repeat of a previously reported semantic feature. These are subjective development judgments, not dataset accuracy estimates.",
+  "4b-production-final": {
+    "features": [
+      {"case": "cap-multi", "feature": 1, "T": false, "B": true, "P": true, "D": false, "note": "The outer visor is black; the description calls it orange."},
+      {"case": "cap-multi", "feature": 2, "T": true, "B": true, "P": true, "D": false, "note": "Orange underside and tapes are visible. Wording and region are broad."},
+      {"case": "cap-multi", "feature": 3, "T": false, "B": true, "P": true, "D": false, "note": "SAM is legible, but the output also identifies the illustrated character by name."},
+      {"case": "cap-single", "feature": 1, "T": false, "B": true, "P": true, "D": false, "note": "Invented character identity Лоузи."},
+      {"case": "cap-single", "feature": 2, "T": true, "B": true, "P": true, "D": false, "note": "SAM text is legible and localized."},
+      {"case": "cap-single", "feature": 3, "T": true, "B": true, "P": true, "D": false, "note": "Border rectangle encloses patch. Exact same region as feature1 fails the application's duplicate-region rule, despite a different semantic detail."},
+      {"case": "suitcase-multi", "feature": 1, "T": true, "B": false, "P": true, "D": false, "note": "Pattern is on shell; rectangle also encloses the extended handle and excess background."},
+      {"case": "suitcase-multi", "feature": 2, "T": true, "B": true, "P": true, "D": false, "note": "Blue patterned lining is visible."},
+      {"case": "suitcase-multi", "feature": 3, "T": true, "B": true, "P": true, "D": false, "note": "Zipper pulls and combination lock are visible."},
+      {"case": "nike-conflict", "feature": 1, "T": true, "B": false, "P": true, "D": false, "note": "Rectangle encloses most of sole for a thin orange seam."},
+      {"case": "nike-conflict", "feature": 2, "T": true, "B": true, "P": true, "D": false, "note": "Multicolored laces are visible and reasonably enclosed."},
+      {"case": "nike-conflict", "feature": 3, "T": true, "B": false, "P": true, "D": false, "note": "Upper color description uses a box around almost the entire pair including soles."},
+      {"case": "nike-conflict", "feature": 4, "T": false, "B": false, "P": true, "D": false, "note": "Green element is at top/front tongue; output calls it rear. Region is broad."},
+      {"case": "demix-annotations", "feature": 1, "T": true, "B": false, "P": true, "D": false, "note": "Logo is visible but rectangle clips its left part."},
+      {"case": "demix-annotations", "feature": 2, "T": true, "B": true, "P": false, "D": false, "note": "Accurate OCR of marketing banner, not a physical detail of the tights."},
+      {"case": "demix-annotations", "feature": 3, "T": true, "B": true, "P": true, "D": true, "note": "Repeats white logo from feature1 in another view; minor clipping tolerated."},
+      {"case": "demix-annotations", "feature": 4, "T": true, "B": true, "P": true, "D": true, "note": "Repeats the same white logo a third time."}
+    ],
+    "totals": {"features": 17, "text_supported": 13, "box_match": 12, "physical_product": 16, "all_three": 8, "extra_duplicates": 2, "all_three_distinct": 6},
+    "selection_notes": {
+      "nike-select": "A and B are the two actual shoe photos; chart and service cards excluded.",
+      "largest-gallery-select": "A/B/C/F includes multiple front/side views and annotated slides. It omits useful unannotated close-up views. Mapping labels are valid, but selection coverage is weak."
+    }
+  },
+  "8b-production-final": {
+    "features": [
+      {"case": "cap-single", "feature": 1, "T": true, "B": true, "P": true, "D": false, "note": "Orange border is visible and enclosed."},
+      {"case": "cap-single", "feature": 2, "T": true, "B": true, "P": true, "D": false, "note": "SAM text is legible and localized."},
+      {"case": "cap-single", "feature": 3, "T": false, "B": false, "P": true, "D": false, "note": "Calls illustrated orange beard/hair fur. Rectangle clips right hand/weapon it describes."},
+      {"case": "cap-multi", "feature": 1, "T": true, "B": true, "P": true, "D": false, "note": "Patch and visible SAM text are correctly described."},
+      {"case": "cap-multi", "feature": 2, "T": true, "B": true, "P": true, "D": false, "note": "Black mesh and orange edging are visible."},
+      {"case": "cap-multi", "feature": 3, "T": false, "B": true, "P": true, "D": false, "note": "Inner tapes read Looney Tunes; repeated [× CAPSLAB] transcription is unsupported. Rectangle roughly covers tapes."},
+      {"case": "cap-multi", "feature": 4, "T": true, "B": true, "P": true, "D": true, "note": "Standalone SAM text partly repeats the text already included in feature1, now in another view."},
+      {"case": "suitcase-multi", "feature": 1, "T": true, "B": true, "P": true, "D": false, "note": "TORBER text tag is visible and localized."},
+      {"case": "suitcase-multi", "feature": 2, "T": true, "B": true, "P": true, "D": false, "note": "Blue lining and pattern are visible and localized."},
+      {"case": "suitcase-multi", "feature": 3, "T": true, "B": true, "P": true, "D": false, "note": "Combination lock and red symbol are visible and localized."},
+      {"case": "nike-conflict", "feature": 1, "T": true, "B": false, "P": true, "D": false, "note": "Rectangle includes most mid-upper and laces for a narrower dark stripe."},
+      {"case": "nike-conflict", "feature": 2, "T": true, "B": false, "P": true, "D": false, "note": "Most of sole is enclosed for a thin orange stripe."},
+      {"case": "nike-conflict", "feature": 3, "T": true, "B": true, "P": true, "D": false, "note": "Patterned laces are visible and enclosed."},
+      {"case": "demix-annotations", "feature": 1, "T": true, "B": true, "P": true, "D": false, "note": "White logo is visible and localized."},
+      {"case": "demix-annotations", "feature": 2, "T": true, "B": false, "P": true, "D": true, "note": "Repeats same logo; bbox is fully offset onto plain fabric."},
+      {"case": "demix-annotations", "feature": 3, "T": true, "B": false, "P": true, "D": true, "note": "Repeats same logo; rectangle stops above DEMIX glyphs and clips them."},
+      {"case": "demix-annotations", "feature": 4, "T": true, "B": false, "P": true, "D": true, "note": "Repeats same logo in another similar view with the same clipped bbox."}
+    ],
+    "totals": {"features": 17, "text_supported": 15, "box_match": 11, "physical_product": 17, "all_three": 10, "extra_duplicates": 4, "all_three_distinct": 9},
+    "selection_notes": {
+      "nike-select": "A and B are the two actual shoe photos. Chart and service cards excluded.",
+      "largest-gallery-select": "A/C/K/S covers overall outfit, logo detail, trousers and cuff. C still contains a marketing caption. IDs are valid. Selection is broader than4B A/B/C/F."
+    },
+    "negative_notes": {
+      "negative-chart": "Returned five table-text features with status ok. Structurally valid but fails physical-product requirement. The separate name-only probe correctly returned insufficient_evidence."
+    }
+  },
+  "8b-second-pass": {
+    "cap-multi": {
+      "focused_before": [true, true, true, true],
+      "focused_after": [true, true, true, true],
+      "note": "Patch and SAM remain well enclosed. Mesh box widens slightly but is acceptable. Tape box remains similar. False tape transcription and partial SAM duplicate remain."
+    },
+    "demix-annotations": {
+      "focused_before": [true, false, false, false],
+      "focused_after": [true, false, false, false],
+      "note": "Frame9 reaches the real symbol after refinement, but DEMIX word sits below the rectangle. Frames10/13 move upward and miss more of the symbol and word."
+    },
+    "focused_total_before": 5,
+    "focused_total_after": 5,
+    "features": 8
+  }
+}

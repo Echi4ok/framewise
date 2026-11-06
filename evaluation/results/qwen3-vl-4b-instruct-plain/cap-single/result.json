@@ -1,0 +1,74 @@
+{
+  "case": "cap-single",
+  "model": "qwen3-vl:4b-instruct",
+  "variant": "plain",
+  "prompt": "Analyze the product photos. Find 3-5 product features. Write short Russian descriptions with bounding boxes normalized 0..1000 [x1,y1,x2,y2] and exact image_id. Return status and features as JSON.",
+  "image_ids": [
+    "40016330299_5"
+  ],
+  "endpoint": "http://127.0.0.1:11436/v1",
+  "seconds": 14.203,
+  "usage": {
+    "completion_tokens": 267,
+    "prompt_tokens": 1897,
+    "total_tokens": 2164,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "result": {
+    "status": "ok",
+    "features": [
+      {
+        "image_id": "40016330299_5",
+        "description": "Нашивка с персонажем Йоземит Сэм, оранжевая окантовка, желтая надпись \"SAM\"",
+        "bbox": [
+          75,
+          183,
+          900,
+          807
+        ]
+      },
+      {
+        "image_id": "40016330299_5",
+        "description": "Персонаж Йоземит Сэм в красной рубашке, с пистолетом в руке",
+        "bbox": [
+          135,
+          260,
+          830,
+          745
+        ]
+      },
+      {
+        "image_id": "40016330299_5",
+        "description": "Оранжевый козырьк на бейсболке, видимый на фоне нашивки",
+        "bbox": [
+          300,
+          215,
+          830,
+          520
+        ]
+      }
+    ]
+  },
+  "valid": true,
+  "prompt_sha256": "f390e89b1c740acbad81fa299064bffc4aeb3c36b267218d15144008388f1699",
+  "input_images": [
+    {
+      "image_id": "40016330299_5",
+      "path": "data/images/40016330299_5.jpg",
+      "source_sha256": "6da6e3fcb8f1865506dd46cf6f8e85a3759f71a682fca55d235938262d5e1094",
+      "canonical_jpeg_sha256": "99b4cb52fdef16e90af92c40e35d02671e91bc5d24cf08bc6f9fc2eef5502fb6",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    }
+  ],
+  "hashes_reconstructed_from_recorded_recipe": true,
+  "sent_image_sha256": [
+    "99b4cb52fdef16e90af92c40e35d02671e91bc5d24cf08bc6f9fc2eef5502fb6"
+  ]
+}

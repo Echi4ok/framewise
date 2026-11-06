@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"43603530299_1\",\n      \"description\": \"Оранжевая строчка по краю подошвы\",\n      \"bbox\": [\n        89,\n        754,\n        887,\n        845\n      ]\n    },\n    {\n      \"image_id\": \"43603530299_1\",\n      \"description\": \"Многоцветные шнурки с узором\",\n      \"bbox\": [\n        348,\n        547,\n        684,\n        743\n      ]\n    },\n    {\n      \"image_id\": \"43603530299_3\",\n      \"description\": \"Серый цвет верха с оранжевыми акцентами\",\n      \"bbox\": [\n        89,\n        325,\n        887, 845\n      ]\n    },\n    {\n      \"image_id\": \"43603530299_3\",\n      \"description\": \"Зеленый элемент на задней части правого кроссовка\",\n      \"bbox\": [\n        587,\n        325,\n        887, 467\n      ]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793874489,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 317,
+    "prompt_tokens": 3502,
+    "total_tokens": 3819,
+    "prompt_tokens_details": {
+      "cached_tokens": 496
+    }
+  },
+  "id": "chatcmpl-z9av8k4GBI7Mv18HFa5L8xlkfaCNTKCg",
+  "timings": {
+    "cache_n": 496,
+    "prompt_n": 3006,
+    "prompt_ms": 1062.992,
+    "prompt_per_token_ms": 0.3536234198270126,
+    "prompt_per_second": 2827.8670018212747,
+    "predicted_n": 317,
+    "predicted_ms": 2400.075,
+    "predicted_per_token_ms": 7.59517405063291,
+    "predicted_per_second": 131.66255221191005
+  }
+}

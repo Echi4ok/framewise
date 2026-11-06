@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"selected_labels\": [\"A\", \"D\", \"F\", \"I\"],\n  \"reason\": \"Фото A показывает общий вид брюк, Фото D — деталь эластичной ткани, Фото F — широкий пояс, а Фото I — сетчатые вставки. Эти четыре изображения вместе демонстрируют ключевые конструктивные и дизайнерские особенности продукта.\"\n}"
+      }
+    }
+  ],
+  "created": 1793874499,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 105,
+    "prompt_tokens": 1288,
+    "total_tokens": 1393,
+    "prompt_tokens_details": {
+      "cached_tokens": 1287
+    }
+  },
+  "id": "chatcmpl-gkZIakUGDQPmvtrpXJnk9gAeBrwIXDBP",
+  "timings": {
+    "cache_n": 1287,
+    "prompt_n": 1,
+    "prompt_ms": 7.578,
+    "prompt_per_token_ms": 7.578,
+    "prompt_per_second": 131.9609395618897,
+    "predicted_n": 105,
+    "predicted_ms": 733.576,
+    "predicted_per_token_ms": 7.053615384615385,
+    "predicted_per_second": 141.77126841663303
+  }
+}

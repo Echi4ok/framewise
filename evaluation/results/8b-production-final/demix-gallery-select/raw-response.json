@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"selected_labels\": [\"A\", \"F\", \"G\", \"O\"],\n  \"reason\": \"Фото A показывает общий вид леггинсов спереди, Фото F — деталь влагоотводящего материала, Фото G — вид сзади, демонстрирующий облегающий крой, Фото O — фронтальный вид без надписей, что даёт полное представление о продукте без рекламных элементов.\"\n}"
+      }
+    }
+  ],
+  "created": 1793875334,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 114,
+    "prompt_tokens": 1288,
+    "total_tokens": 1402,
+    "prompt_tokens_details": {
+      "cached_tokens": 196
+    }
+  },
+  "id": "chatcmpl-c1EjH1QnoysB11qiY42qxsNk3ojxDVHi",
+  "timings": {
+    "cache_n": 196,
+    "prompt_n": 1092,
+    "prompt_ms": 775.062,
+    "prompt_per_token_ms": 0.7097637362637362,
+    "prompt_per_second": 1408.9195445009561,
+    "predicted_n": 114,
+    "predicted_ms": 1261.169,
+    "predicted_per_token_ms": 11.16078761061947,
+    "predicted_per_second": 89.59941133979665
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "coordinate_space": {
+    "format": "xyxy",
+    "range": [
+      0,
+      1000
+    ],
+    "origin": "top_left",
+    "normalization": "x / image_width * 1000, y / image_height * 1000",
+    "annotation_method": "manual visual inspection",
+    "precision_note": "Approximate reference rectangles. Review overlays manually. Collar and visor boundaries are less precise than the patch or lock."
+  },
+  "evaluation_note": "Four manually selected development cases, not a statistically representative held-out test set. Check descriptions, image selection, bounding boxes, catalog attribution and structured-output validity separately.",
+  "cases": [
+    {
+      "case_id": "cap_small_details",
+      "product_id": "40016330299",
+      "images": [
+        {
+          "image_id": "40016330299_1",
+          "image_order": 1,
+          "path": "data/images/40016330299_1.jpg",
+          "kind": "product",
+          "visible_features": [
+            "black cap",
+            "orange-bordered front patch",
+            "curved visor"
+          ],
+          "bbox_references": []
+        },
+        {
+          "image_id": "40016330299_4",
+          "image_order": 4,
+          "path": "data/images/40016330299_4.jpg",
+          "kind": "product_detail",
+          "visible_features": [
+            "orange underside of visor",
+            "mesh back",
+            "orange interior seam tape"
+          ],
+          "bbox_references": [
+            {
+              "label": "orange visor underside",
+              "xyxy": [
+                90,
+                350,
+                710,
+                805
+              ],
+              "note": "Loose rectangle around the curved orange visor, excluding the orange seam tape."
+            }
+          ]
+        },
+        {
+          "image_id": "40016330299_5",
+          "image_order": 5,
+          "path": "data/images/40016330299_5.jpg",
+          "kind": "product_detail",
+          "visible_features": [
+            "orange-bordered character patch",
+            "yellow SAM lettering"
+          ],
+          "bbox_references": [
+            {
+              "label": "front patch",
+              "xyxy": [
+                75,
+                180,
+                910,
+                815
+              ],
+              "note": ""
+            },
+            {
+              "label": "SAM lettering",
+              "xyxy": [
+                185,
+                250,
+                305,
+                300
+              ],
+              "note": ""
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "check_id": "visor_underside",
+          "type": "visual_feature",
+          "expected": "Identify the orange underside of the visor using image 4.",
+          "evidence_image_ids": [
+            "40016330299_4"
+          ]
+        },
+        {
+          "check_id": "patch_and_ocr",
+          "type": "visual_feature",
+          "expected": "Identify the front patch and read SAM using the close-up.",
+          "evidence_image_ids": [
+            "40016330299_5"
+          ]
+        },
+        {
+          "check_id": "catalog_attribution",
+          "type": "grounding",
+          "expected": "Exact fabric composition, 6.5 cm visor length and 13 cm depth require catalog attribution. Photos alone do not verify these values.",
+          "evidence_image_ids": []
+        }
+      ]
+    },
+    {
+      "case_id": "suitcase_multiple_views",
+      "product_id": "43358020299",
+      "images": [
+        {
+          "image_id": "43358020299_1",
+          "image_order": 1,
+          "path": "data/images/43358020299_1.jpg",
+          "kind": "product",
+          "visible_features": [
+            "light gray suitcase",
+            "extended telescopic handle",
+            "wheels"
+          ],
+          "bbox_references": [
+            {
+              "label": "extended telescopic handle",
+              "xyxy": [
+                405,
+                50,
+                595,
+                475
+              ],
+              "note": ""
+            }
+          ]
+        },
+        {
+          "image_id": "43358020299_3",
+          "image_order": 3,
+          "path": "data/images/43358020299_3.jpg",
+          "kind": "product_detail",
+          "visible_features": [
+            "open suitcase",
+            "blue lining",
+            "X-shaped retention straps on right half"
+          ],
+          "bbox_references": [
+            {
+              "label": "blue lining across both halves",
+              "xyxy": [
+                110,
+                270,
+                900,
+                705
+              ],
+              "note": ""
+            },
+            {
+              "label": "X-shaped retention straps",
+              "xyxy": [
+                535,
+                280,
+                860,
+                700
+              ],
+              "note": ""
+            }
+          ]
+        },
+        {
+          "image_id": "43358020299_7",
+          "image_order": 7,
+          "path": "data/images/43358020299_7.jpg",
+          "kind": "product_detail",
+          "visible_features": [
+            "combination lock",
+            "TSA symbol",
+            "metal zipper pulls"
+          ],
+          "bbox_references": [
+            {
+              "label": "black combination lock body",
+              "xyxy": [
+                415,
+                545,
+                790,
+                710
+              ],
+              "note": "Reference targets the black lock body, excluding the two dangling metal zipper pulls."
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "check_id": "handle",
+          "type": "visual_feature",
+          "expected": "Locate the extended telescopic handle.",
+          "evidence_image_ids": [
+            "43358020299_1"
+          ]
+        },
+        {
+          "check_id": "interior",
+          "type": "visual_feature",
+          "expected": "Locate blue lining and X-shaped straps inside the open suitcase.",
+          "evidence_image_ids": [
+            "43358020299_3"
+          ]
+        },
+        {
+          "check_id": "lock",
+          "type": "visual_feature",
+          "expected": "Locate the combination lock in image 7.",
+          "evidence_image_ids": [
+            "43358020299_7"
+          ]
+        },
+        {
+          "check_id": "catalog_attribution",
+          "type": "grounding",
+          "expected": "Volume 35 L, exact dimensions, polypropylene composition and 360-degree wheel rotation are catalog claims. Keep their source distinct from visible details.",
+          "evidence_image_ids": []
+        }
+      ]
+    },
+    {
+      "case_id": "nike_catalog_conflict_and_service_frames",
+      "product_id": "43603530299",
+      "images": [
+        {
+          "image_id": "43603530299_1",
+          "image_order": 1,
+          "path": "data/images/43603530299_1.jpg",
+          "kind": "product",
+          "visible_features": [
+            "gray-beige high-top shoe",
+            "multicolored laces",
+            "light sole",
+            "raised ankle shaft"
+          ],
+          "bbox_references": [
+            {
+              "label": "raised ankle shaft",
+              "xyxy": [
+                570,
+                465,
+                905,
+                735
+              ],
+              "note": "Loose reference. The shaft blends into the shoe upper."
+            }
+          ]
+        },
+        {
+          "image_id": "43603530299_3",
+          "image_order": 3,
+          "path": "data/images/43603530299_3.jpg",
+          "kind": "product",
+          "visible_features": [
+            "pair of gray-beige high-top shoes",
+            "raised ankle shafts",
+            "multicolored laces"
+          ],
+          "bbox_references": [
+            {
+              "label": "both raised ankle shafts",
+              "xyxy": [
+                430,
+                320,
+                910,
+                620
+              ],
+              "note": "Joint rectangle for both shoes. Use a loose tolerance."
+            }
+          ]
+        },
+        {
+          "image_id": "43603530299_6",
+          "image_order": 6,
+          "path": "data/images/43603530299_6.jpg",
+          "kind": "size_chart",
+          "visible_features": [
+            "size conversion chart"
+          ],
+          "bbox_references": []
+        },
+        {
+          "image_id": "43603530299_7",
+          "image_order": 7,
+          "path": "data/images/43603530299_7.jpg",
+          "kind": "service_information",
+          "visible_features": [
+            "delivery and import information card"
+          ],
+          "bbox_references": []
+        },
+        {
+          "image_id": "43603530299_8",
+          "image_order": 8,
+          "path": "data/images/43603530299_8.jpg",
+          "kind": "service_information",
+          "visible_features": [
+            "passport, shipping and returns information card"
+          ],
+          "bbox_references": []
+        }
+      ],
+      "checks": [
+        {
+          "check_id": "catalog_contradiction",
+          "type": "catalog_contradiction",
+          "catalog_claim": "Кеды женские Nike Air Force 1 — это низкая модель линейки Air Force 1. Мягкий низкий ворот.",
+          "expected": "Flag the visible high ankle shafts as conflicting with the catalog's low-top / low-collar description. Avoid resolving the exact shoe model from the photos alone.",
+          "evidence_image_ids": [
+            "43603530299_1",
+            "43603530299_3"
+          ]
+        },
+        {
+          "check_id": "service_frame_filter",
+          "type": "image_classification",
+          "expected": "Classify image 6 as a size chart and images 7–8 as service information. Do not use these frames as visual evidence of product construction.",
+          "evidence_image_ids": [
+            "43603530299_6",
+            "43603530299_7",
+            "43603530299_8"
+          ]
+        },
+        {
+          "check_id": "invisible_technology",
+          "type": "grounding",
+          "expected": "Nike Air cushioning and leather composition require attribution to the catalog.",
+          "evidence_image_ids": []
+        }
+      ]
+    },
+    {
+      "case_id": "demix_ocr_low_light_and_target_focus",
+      "product_id": "35472730299",
+      "images": [
+        {
+          "image_id": "35472730299_1",
+          "image_order": 1,
+          "path": "data/images/35472730299_1.jpg",
+          "kind": "product_on_model",
+          "visible_features": [
+            "black fitted tights on a model",
+            "shoes are separate outfit items"
+          ],
+          "bbox_references": []
+        },
+        {
+          "image_id": "35472730299_9",
+          "image_order": 9,
+          "path": "data/images/35472730299_9.jpg",
+          "kind": "annotated_product",
+          "visible_features": [
+            "black tights",
+            "СЕТЧАТЫЕ ВСТАВКИ text annotation"
+          ],
+          "bbox_references": []
+        },
+        {
+          "image_id": "35472730299_10",
+          "image_order": 10,
+          "path": "data/images/35472730299_10.jpg",
+          "kind": "annotated_product",
+          "visible_features": [
+            "dark photograph",
+            "bright logo on tights",
+            "СВЕТООТРАЖАЮЩИЕ ДЕТАЛИ text annotation"
+          ],
+          "bbox_references": []
+        },
+        {
+          "image_id": "35472730299_13",
+          "image_order": 13,
+          "path": "data/images/35472730299_13.jpg",
+          "kind": "product_detail",
+          "visible_features": [
+            "dark photograph",
+            "bright Demix logo on upper thigh",
+            "tights on model"
+          ],
+          "bbox_references": []
+        }
+      ],
+      "checks": [
+        {
+          "check_id": "target_focus",
+          "type": "object_focus",
+          "expected": "Describe the tights. Keep shoes, hands and the model separate from the target product.",
+          "evidence_image_ids": [
+            "35472730299_1",
+            "35472730299_13"
+          ]
+        },
+        {
+          "check_id": "mesh_ocr",
+          "type": "ocr_attribution",
+          "expected": "Read СЕТЧАТЫЕ ВСТАВКИ from image 9 and distinguish the printed annotation from independently visible material structure.",
+          "evidence_image_ids": [
+            "35472730299_9"
+          ]
+        },
+        {
+          "check_id": "reflective_detail",
+          "type": "ocr_attribution",
+          "expected": "Read СВЕТООТРАЖАЮЩИЕ ДЕТАЛИ in image 10. Image 13 shows a bright Demix logo in a dark photograph. Treat the reflective function as supported by annotation/catalog, with the bright appearance separately observed.",
+          "evidence_image_ids": [
+            "35472730299_10",
+            "35472730299_13"
+          ]
+        },
+        {
+          "check_id": "catalog_attribution",
+          "type": "grounding",
+          "expected": "Moisture transport, quick drying and ventilation performance require catalog attribution.",
+          "evidence_image_ids": []
+        }
+      ]
+    }
+  ]
+}

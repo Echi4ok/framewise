@@ -1,0 +1,120 @@
+{
+  "case": "cap-multi",
+  "model": "qwen3-vl:4b-instruct",
+  "variant": "plain",
+  "prompt": "Analyze the product photos. Find 3-5 product features. Write short Russian descriptions with bounding boxes normalized 0..1000 [x1,y1,x2,y2] and exact image_id. Return status and features as JSON.",
+  "image_ids": [
+    "40016330299_1",
+    "40016330299_4",
+    "40016330299_5"
+  ],
+  "endpoint": "http://127.0.0.1:11436/v1",
+  "seconds": 18.015,
+  "usage": {
+    "completion_tokens": 477,
+    "prompt_tokens": 4903,
+    "total_tokens": 5380,
+    "prompt_tokens_details": {
+      "cached_tokens": 404
+    }
+  },
+  "finish_reason": "stop",
+  "result": {
+    "status": "ok",
+    "features": [
+      {
+        "image_id": "40016330299_1",
+        "description": "На передней панели бейсболки — нашивка с персонажем Йоземит Сэм, оранжевая окантовка и желтая надпись \"SAM\".",
+        "bbox": [
+          275,
+          338,
+          535,
+          540
+        ]
+      },
+      {
+        "image_id": "40016330299_1",
+        "description": "Сетчатая часть бейсболки с оранжевыми швами и нашивкой с надписью \"Yosemite Sam\".",
+        "bbox": [
+          675,
+          265,
+          915,
+          605
+        ]
+      },
+      {
+        "image_id": "40016330299_1",
+        "description": "Резиновый ярлычок с логотипом бренда Capslab на задней части бейсболки.",
+        "bbox": [
+          775,
+          527,
+          880,
+          575
+        ]
+      },
+      {
+        "image_id": "40016330299_4",
+        "description": "Внутренняя сторона козырька оранжевого цвета, с черными швами и оранжевой окантовкой.",
+        "bbox": [
+          85,
+          343,
+          915,
+          805
+        ]
+      },
+      {
+        "image_id": "40016330299_5",
+        "description": "Крупный план нашивки с персонажем Йоземит Сэм, держащим пистолет, и желтой надписью \"SAM\" в левом верхнем углу.",
+        "bbox": [
+          75,
+          185,
+          900,
+          805
+        ]
+      }
+    ]
+  },
+  "valid": true,
+  "prompt_sha256": "f390e89b1c740acbad81fa299064bffc4aeb3c36b267218d15144008388f1699",
+  "input_images": [
+    {
+      "image_id": "40016330299_1",
+      "path": "data/images/40016330299_1.jpg",
+      "source_sha256": "911a2d7f1130aa097a0b22f1755af5a144429e714519ecb87236daa579f507f8",
+      "canonical_jpeg_sha256": "bb37890301bb770f74ab464cd554164acc81295c2dea39fb11526f08982c4a8b",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "40016330299_4",
+      "path": "data/images/40016330299_4.jpg",
+      "source_sha256": "3118d3eb51bf69bdddfd61df8dc702dc52d65ffd14ece38292814b14ba2c4989",
+      "canonical_jpeg_sha256": "95446b119cd6a2a75edd3c638567684d3bd9dddaab955663cddf77ccfcbca5f5",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "40016330299_5",
+      "path": "data/images/40016330299_5.jpg",
+      "source_sha256": "6da6e3fcb8f1865506dd46cf6f8e85a3759f71a682fca55d235938262d5e1094",
+      "canonical_jpeg_sha256": "99b4cb52fdef16e90af92c40e35d02671e91bc5d24cf08bc6f9fc2eef5502fb6",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    }
+  ],
+  "hashes_reconstructed_from_recorded_recipe": true,
+  "sent_image_sha256": [
+    "bb37890301bb770f74ab464cd554164acc81295c2dea39fb11526f08982c4a8b",
+    "95446b119cd6a2a75edd3c638567684d3bd9dddaab955663cddf77ccfcbca5f5",
+    "99b4cb52fdef16e90af92c40e35d02671e91bc5d24cf08bc6f9fc2eef5502fb6"
+  ]
+}

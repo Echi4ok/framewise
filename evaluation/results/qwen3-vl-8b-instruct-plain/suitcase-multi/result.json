@@ -1,0 +1,101 @@
+{
+  "case": "suitcase-multi",
+  "model": "qwen3-vl:8b-instruct",
+  "variant": "plain",
+  "catalog_included": true,
+  "prompt": "Analyze the product photos. Find 3-5 product features. Write short Russian descriptions with bounding boxes normalized 0..1000 [x1,y1,x2,y2] and exact image_id. Return status and features as JSON.",
+  "image_ids": [
+    "43358020299_1",
+    "43358020299_3",
+    "43358020299_7"
+  ],
+  "endpoint": "http://127.0.0.1:11436/v1",
+  "prompt_sha256": "f390e89b1c740acbad81fa299064bffc4aeb3c36b267218d15144008388f1699",
+  "target_name_included": false,
+  "input_images": [
+    {
+      "image_id": "43358020299_1",
+      "path": "data/images/43358020299_1.jpg",
+      "source_sha256": "f3fad5c3467945ab44315381cfd21907253e9b0da7a20130e7c8f98fd513a710",
+      "canonical_jpeg_sha256": "87580fc2300e9d8069f8994a1df1cf3a8bf8a4622b4b0fa0e7e634d223d5b822",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "43358020299_3",
+      "path": "data/images/43358020299_3.jpg",
+      "source_sha256": "accfb9947db6a203d6cf6ce13dd9487c6ade3ff37bcad2f63b59ccee8050370c",
+      "canonical_jpeg_sha256": "046625525d5647b5913aef89313ea9cc5ee560b10fbf26753b5e48e2f86c56f7",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "43358020299_7",
+      "path": "data/images/43358020299_7.jpg",
+      "source_sha256": "64b228e8875f9c0999ea8e58cdcc1957a3d961bf242898a724b8635f3140e03c",
+      "canonical_jpeg_sha256": "05aabce4484ee3ed090409d0175db5803878ca856a665dd1756d55c76739b5c5",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    }
+  ],
+  "sent_image_sha256": [
+    "87580fc2300e9d8069f8994a1df1cf3a8bf8a4622b4b0fa0e7e634d223d5b822",
+    "046625525d5647b5913aef89313ea9cc5ee560b10fbf26753b5e48e2f86c56f7",
+    "05aabce4484ee3ed090409d0175db5803878ca856a665dd1756d55c76739b5c5"
+  ],
+  "seconds": 7.453,
+  "usage": {
+    "completion_tokens": 285,
+    "prompt_tokens": 5113,
+    "total_tokens": 5398,
+    "prompt_tokens_details": {
+      "cached_tokens": 74
+    }
+  },
+  "finish_reason": "stop",
+  "result": {
+    "status": "ok",
+    "features": [
+      {
+        "image_id": "43358020299_1",
+        "description": "Чемодан с телескопической ручкой и четырьмя колесами, вращающимися на 360 градусов.",
+        "bbox": [
+          264,
+          49,
+          736,
+          951
+        ]
+      },
+      {
+        "image_id": "43358020299_3",
+        "description": "Внутреннее пространство чемодана с двумя отделениями: одно с молнией и карманом, другое с ремнями в форме X для фиксации вещей.",
+        "bbox": [
+          84,
+          273,
+          914,
+          733
+        ]
+      },
+      {
+        "image_id": "43358020299_7",
+        "description": "Цифровой замок TSA для защиты багажа и возможности инспекции таможенными службами.",
+        "bbox": [
+          346,
+          533,
+          800,
+          700
+        ]
+      }
+    ]
+  },
+  "valid": true
+}

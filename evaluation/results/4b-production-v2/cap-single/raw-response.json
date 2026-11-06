@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Оранжевый шов по периметру патчей\",\n      \"bbox\": [\n        75,\n        185,\n        900,\n        807\n      ]\n    },\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Патч с изображением персонажа Лоу-Джоу\",\n      \"bbox\": [\n        135,\n        214,\n        840, 755\n      ]\n    },\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Текст \\\"SAM\\\" на патче\",\n      \"bbox\": [\n        175,\n        250,\n        300,\n        300\n      ]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793874015,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 243,
+    "prompt_tokens": 1937,
+    "total_tokens": 2180,
+    "prompt_tokens_details": {
+      "cached_tokens": 1
+    }
+  },
+  "id": "chatcmpl-ogLTPqhONaqpYOpE5BP7EcqsUAhF4OPP",
+  "timings": {
+    "cache_n": 1,
+    "prompt_n": 1936,
+    "prompt_ms": 542.307,
+    "prompt_per_token_ms": 0.2801172520661157,
+    "prompt_per_second": 3569.933635376272,
+    "predicted_n": 243,
+    "predicted_ms": 1590.725,
+    "predicted_per_token_ms": 6.573243801652892,
+    "predicted_per_second": 152.13188954721906
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "case": "demix-annotations",
+  "model": "qwen3-vl:8b-instruct",
+  "variant": "plain",
+  "catalog_included": true,
+  "prompt": "Analyze the product photos. Find 3-5 product features. Write short Russian descriptions with bounding boxes normalized 0..1000 [x1,y1,x2,y2] and exact image_id. Return status and features as JSON.",
+  "image_ids": [
+    "35472730299_1",
+    "35472730299_9",
+    "35472730299_10",
+    "35472730299_13"
+  ],
+  "endpoint": "http://127.0.0.1:11436/v1",
+  "prompt_sha256": "f390e89b1c740acbad81fa299064bffc4aeb3c36b267218d15144008388f1699",
+  "target_name_included": false,
+  "input_images": [
+    {
+      "image_id": "35472730299_1",
+      "path": "data/images/35472730299_1.jpg",
+      "source_sha256": "187f6d7af76e3b633dbbf4e00a0dd5667eb04ebb4a0b7aceae3400be308c2adc",
+      "canonical_jpeg_sha256": "65bea646552dc5abba8bb688836e8e64220fecb9cabdd53c5ee2e438d44d87da",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "35472730299_9",
+      "path": "data/images/35472730299_9.jpg",
+      "source_sha256": "d8da49563c4e4e1d33ab8757439389d1d0775a7f82a5788864feccb058ad4723",
+      "canonical_jpeg_sha256": "551da5bc18c6d70635d028484f4e4701b19534c2cf4443e83d9e6878d2a26d48",
+      "canonical_size": [
+        910,
+        910
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "35472730299_10",
+      "path": "data/images/35472730299_10.jpg",
+      "source_sha256": "bf1e411a69ac7167a556c12cb8a00364d0236b438dcce1516da5fe35a01cffc8",
+      "canonical_jpeg_sha256": "618d238b92dc4a04431508bb781b0859b4e10781c7e0edb8770aa1cdae25c75d",
+      "canonical_size": [
+        910,
+        910
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "35472730299_13",
+      "path": "data/images/35472730299_13.jpg",
+      "source_sha256": "6537b9d85275b3b14c9939bf2215c253024d353122565b3c48fc1011ecd76004",
+      "canonical_jpeg_sha256": "8188d3debc1976158ca27e6badbe817e939ff446a4dd2876d56c48cafd0f1fb6",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    }
+  ],
+  "sent_image_sha256": [
+    "65bea646552dc5abba8bb688836e8e64220fecb9cabdd53c5ee2e438d44d87da",
+    "551da5bc18c6d70635d028484f4e4701b19534c2cf4443e83d9e6878d2a26d48",
+    "618d238b92dc4a04431508bb781b0859b4e10781c7e0edb8770aa1cdae25c75d",
+    "8188d3debc1976158ca27e6badbe817e939ff446a4dd2876d56c48cafd0f1fb6"
+  ],
+  "seconds": 7.703,
+  "usage": {
+    "completion_tokens": 298,
+    "prompt_tokens": 5528,
+    "total_tokens": 5826,
+    "prompt_tokens_details": {
+      "cached_tokens": 73
+    }
+  },
+  "finish_reason": "stop",
+  "result": {
+    "status": "ok",
+    "features": [
+      {
+        "image_id": "35472730299_9",
+        "description": "Сетчатые вставки обеспечивают дополнительный приток воздуха, чтобы ребенку не было жарко на тренировке.",
+        "bbox": [
+          98,
+          277,
+          412,
+          437
+        ]
+      },
+      {
+        "image_id": "35472730299_10",
+        "description": "Светоотражающие детали делают ребенка более заметным во время вечерних тренировок на открытых площадках. Занятия спортом станут более безопасными.",
+        "bbox": [
+          78,
+          537,
+          572,
+          700
+        ]
+      },
+      {
+        "image_id": "35472730299_1",
+        "description": "Плотная посадка и эластичная ткань обеспечивают комфорт и надежную фиксацию на талии.",
+        "bbox": [
+          277,
+          100,
+          750,
+          785
+        ]
+      }
+    ]
+  },
+  "valid": true
+}

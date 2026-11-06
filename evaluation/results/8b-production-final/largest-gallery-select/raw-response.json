@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"selected_labels\": [\"A\", \"C\", \"K\", \"S\"],\n  \"reason\": \"Фото A показывает общую картину костюма на человеке, фото C — деталь материала, фото K — деталь карманов, фото S — деталь манжеты. Эти снимки вместе дают полное представление о продукте с разными ракурсами и деталями.\"\n}"
+      }
+    }
+  ],
+  "created": 1793875339,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 98,
+    "prompt_tokens": 1341,
+    "total_tokens": 1439,
+    "prompt_tokens_details": {
+      "cached_tokens": 226
+    }
+  },
+  "id": "chatcmpl-VbrRb3RoyAnEdZeU9GNsWa5cAxK4agUy",
+  "timings": {
+    "cache_n": 226,
+    "prompt_n": 1115,
+    "prompt_ms": 722.832,
+    "prompt_per_token_ms": 0.6482798206278026,
+    "prompt_per_second": 1542.543772273502,
+    "predicted_n": 98,
+    "predicted_ms": 969.729,
+    "predicted_per_token_ms": 9.997206185567011,
+    "predicted_per_second": 100.02794595191027
+  }
+}

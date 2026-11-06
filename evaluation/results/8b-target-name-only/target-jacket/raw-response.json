@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"42153320299_1\",\n      \"description\": \"На рукаве куртки видна светло-зеленая окантовка.\",\n      \"bbox\": [630, 456, 714, 542]\n    },\n    {\n      \"image_id\": \"42153320299_3\",\n      \"description\": \"На левой стороне груди куртки расположен небольшой логотип.\",\n      \"bbox\": [564, 498, 620, 542]\n    },\n    {\n      \"image_id\": \"42153320299_3\",\n      \"description\": \"На левом рукаве куртки видна светло-серая окантовка.\",\n      \"bbox\": [730, 798, 850, 842]\n    },\n    {\n      \"image_id\": \"42153320299_3\",\n      \"description\": \"На нижней части куртки виден черный пластиковый фиксатор.\",\n      \"bbox\": [570, 798, 600, 820]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793875385,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 314,
+    "prompt_tokens": 3573,
+    "total_tokens": 3887,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "id": "chatcmpl-UZjpgXMkrqsqMXw52MYjJf3MzhdFJcDV",
+  "timings": {
+    "cache_n": 512,
+    "prompt_n": 3061,
+    "prompt_ms": 2154.649,
+    "prompt_per_token_ms": 0.7039036262659262,
+    "prompt_per_second": 1420.6490245046875,
+    "predicted_n": 314,
+    "predicted_ms": 3202.228,
+    "predicted_per_token_ms": 10.230760383386581,
+    "predicted_per_second": 97.74444542986944
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "case": "cap_small_details",
+  "model": "qwen3-vl:8b-instruct",
+  "variant": "improved",
+  "catalog_included": false,
+  "prompt": "Locate precisely each requested visible detail in its specified image. Return JSON with detections containing target_id, exact image_id and bbox [x1,y1,x2,y2] integers normalized to 0..1000 for that entire image. Use tight boxes. The targets are [{\"target_id\": \"target-1\", \"image_id\": \"40016330299_4\", \"label\": \"orange visor underside\"}, {\"target_id\": \"target-2\", \"image_id\": \"40016330299_5\", \"label\": \"front patch\"}, {\"target_id\": \"target-3\", \"image_id\": \"40016330299_5\", \"label\": \"SAM lettering\"}]",
+  "image_ids": [
+    "40016330299_4",
+    "40016330299_5"
+  ],
+  "endpoint": "http://127.0.0.1:11436/v1",
+  "prompt_sha256": "d7087a42344614bb0d48f1e7f65ea90da696511f0bfa351e677e5a207d4e8e85",
+  "target_name_included": false,
+  "input_images": [
+    {
+      "image_id": "40016330299_4",
+      "path": "data/images/40016330299_4.jpg",
+      "source_sha256": "3118d3eb51bf69bdddfd61df8dc702dc52d65ffd14ece38292814b14ba2c4989",
+      "canonical_jpeg_sha256": "95446b119cd6a2a75edd3c638567684d3bd9dddaab955663cddf77ccfcbca5f5",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "40016330299_5",
+      "path": "data/images/40016330299_5.jpg",
+      "source_sha256": "6da6e3fcb8f1865506dd46cf6f8e85a3759f71a682fca55d235938262d5e1094",
+      "canonical_jpeg_sha256": "99b4cb52fdef16e90af92c40e35d02671e91bc5d24cf08bc6f9fc2eef5502fb6",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    }
+  ],
+  "sent_image_sha256": [
+    "95446b119cd6a2a75edd3c638567684d3bd9dddaab955663cddf77ccfcbca5f5",
+    "99b4cb52fdef16e90af92c40e35d02671e91bc5d24cf08bc6f9fc2eef5502fb6"
+  ],
+  "seconds": 5.079,
+  "usage": {
+    "completion_tokens": 187,
+    "prompt_tokens": 3180,
+    "total_tokens": 3367,
+    "prompt_tokens_details": {
+      "cached_tokens": 1
+    }
+  },
+  "finish_reason": "stop",
+  "result": {
+    "detections": [
+      {
+        "target_id": "target-1",
+        "image_id": "40016330299_4",
+        "bbox": [
+          85,
+          345,
+          724,
+          804
+        ]
+      },
+      {
+        "target_id": "target-2",
+        "image_id": "40016330299_5",
+        "bbox": [
+          72,
+          175,
+          912,
+          804
+        ]
+      },
+      {
+        "target_id": "target-3",
+        "image_id": "40016330299_5",
+        "bbox": [
+          175,
+          243,
+          294,
+          300
+        ]
+      }
+    ]
+  },
+  "valid": true,
+  "grounding": [
+    {
+      "target_id": "target-1",
+      "image_id": "40016330299_4",
+      "label": "orange visor underside",
+      "reference_bbox": [
+        90,
+        350,
+        710,
+        805
+      ],
+      "prediction": {
+        "target_id": "target-1",
+        "image_id": "40016330299_4",
+        "bbox": [
+          85,
+          345,
+          724,
+          804
+        ]
+      },
+      "iou": 0.9577,
+      "pass_iou_50": true
+    },
+    {
+      "target_id": "target-2",
+      "image_id": "40016330299_5",
+      "label": "front patch",
+      "reference_bbox": [
+        75,
+        180,
+        910,
+        815
+      ],
+      "prediction": {
+        "target_id": "target-2",
+        "image_id": "40016330299_5",
+        "bbox": [
+          72,
+          175,
+          912,
+          804
+        ]
+      },
+      "iou": 0.9693,
+      "pass_iou_50": true
+    },
+    {
+      "target_id": "target-3",
+      "image_id": "40016330299_5",
+      "label": "SAM lettering",
+      "reference_bbox": [
+        185,
+        250,
+        305,
+        300
+      ],
+      "prediction": {
+        "target_id": "target-3",
+        "image_id": "40016330299_5",
+        "bbox": [
+          175,
+          243,
+          294,
+          300
+        ]
+      },
+      "iou": 0.7432,
+      "pass_iou_50": true
+    }
+  ]
+}

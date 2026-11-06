@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Пatches с вышитым персонажем Лоузи, держащим пистолет, на фоне синего и бежевого цвета.\",\n      \"bbox\": [\n        73,\n        183,\n        900,\n        807\n      ]\n    },\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"На патчах видна вышитая надпись 'SAM' золотистым шрифтом в левом верхнем углу.\",\n      \"bbox\": [\n        170,\n        246,\n        300,\n        300\n      ]\n    },\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Патч имеет оранжевую вышитую окантовку с четким швом по всему периметру.\",\n      \"bbox\": [\n        73,\n        183,\n        900,\n        807\n      ]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793874474,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 302,
+    "prompt_tokens": 1999,
+    "total_tokens": 2301,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    }
+  },
+  "id": "chatcmpl-U3EhV1orWK7C8RtQ2UTkrQURC5fjHDBW",
+  "timings": {
+    "cache_n": 4,
+    "prompt_n": 1995,
+    "prompt_ms": 549.212,
+    "prompt_per_token_ms": 0.2752942355889724,
+    "prompt_per_second": 3632.477076247424,
+    "predicted_n": 302,
+    "predicted_ms": 1951.049,
+    "predicted_per_token_ms": 6.481890365448505,
+    "predicted_per_second": 154.2759817923589
+  }
+}

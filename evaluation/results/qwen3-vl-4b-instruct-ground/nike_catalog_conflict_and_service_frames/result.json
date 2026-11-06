@@ -1,0 +1,124 @@
+{
+  "case": "nike_catalog_conflict_and_service_frames",
+  "model": "qwen3-vl:4b-instruct",
+  "variant": "improved",
+  "prompt": "Locate precisely each requested visible detail in its specified image. Return JSON with detections containing target_id, exact image_id and bbox [x1,y1,x2,y2] integers normalized to 0..1000 for that entire image. Use tight boxes. The targets are [{\"target_id\": \"target-1\", \"image_id\": \"43603530299_1\", \"label\": \"raised ankle shaft\"}, {\"target_id\": \"target-2\", \"image_id\": \"43603530299_3\", \"label\": \"both raised ankle shafts\"}]",
+  "image_ids": [
+    "43603530299_1",
+    "43603530299_3"
+  ],
+  "endpoint": "http://127.0.0.1:11436/v1",
+  "seconds": 2.657,
+  "usage": {
+    "completion_tokens": 143,
+    "prompt_tokens": 3146,
+    "total_tokens": 3289,
+    "prompt_tokens_details": {
+      "cached_tokens": 76
+    }
+  },
+  "finish_reason": "stop",
+  "result": {
+    "detections": [
+      {
+        "target_id": "target-1",
+        "image_id": "43603530299_1",
+        "bbox": [
+          87,
+          466,
+          908,
+          847
+        ]
+      },
+      {
+        "target_id": "target-2",
+        "image_id": "43603530299_3",
+        "bbox": [
+          87,
+          320,
+          908,
+          847
+        ]
+      }
+    ]
+  },
+  "valid": true,
+  "grounding": [
+    {
+      "target_id": "target-1",
+      "image_id": "43603530299_1",
+      "label": "raised ankle shaft",
+      "reference_bbox": [
+        570,
+        465,
+        905,
+        735
+      ],
+      "prediction": {
+        "target_id": "target-1",
+        "image_id": "43603530299_1",
+        "bbox": [
+          87,
+          466,
+          908,
+          847
+        ]
+      },
+      "iou": 0.2878,
+      "pass_iou_50": false
+    },
+    {
+      "target_id": "target-2",
+      "image_id": "43603530299_3",
+      "label": "both raised ankle shafts",
+      "reference_bbox": [
+        430,
+        320,
+        910,
+        620
+      ],
+      "prediction": {
+        "target_id": "target-2",
+        "image_id": "43603530299_3",
+        "bbox": [
+          87,
+          320,
+          908,
+          847
+        ]
+      },
+      "iou": 0.331,
+      "pass_iou_50": false
+    }
+  ],
+  "prompt_sha256": "af67078fa5645a272bb17d704b00b6dc7f88b5962b36f0ce52f0c6aebe44cb2c",
+  "input_images": [
+    {
+      "image_id": "43603530299_1",
+      "path": "data/images/43603530299_1.jpg",
+      "source_sha256": "5a0f73ee16c643e523923750ab55d1a6bf5e1acfb5c2309c26d95f00e80591be",
+      "canonical_jpeg_sha256": "fbfbc1d1c415c99a17b46d130174f95b097ab6294c1fa36febf45f558f8bc6eb",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "43603530299_3",
+      "path": "data/images/43603530299_3.jpg",
+      "source_sha256": "c68c92f6a2ec1b69420cf4a5795f0dc618716c6467f2dd7203e60efdc3daf60c",
+      "canonical_jpeg_sha256": "0336125825ae218604ce0f2e0e71358d7a15dd3f047f002836f81a9bcae78233",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    }
+  ],
+  "hashes_reconstructed_from_recorded_recipe": true,
+  "sent_image_sha256": [
+    "fbfbc1d1c415c99a17b46d130174f95b097ab6294c1fa36febf45f558f8bc6eb",
+    "0336125825ae218604ce0f2e0e71358d7a15dd3f047f002836f81a9bcae78233"
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "case": "cap-multi",
+  "model": "qwen3-vl:8b-instruct",
+  "prompt": "Verify each proposed feature against the supplied product photographs. The product name only identifies the intended object. Pixels are the sole evidence. For each feature_index, keep the exact image_id. Preserve the existing description by referring to its index. Set supported=false if the entire description is not directly supported, if it describes a marketing banner instead of a physical product detail, or if it repeats the same feature from another view. For repeats retain only the clearest one. Uncertain OCR transcription, invented names, materials and functional qualities are unsupported. For supported features, return a fresh tight bbox around the physical detail, [x1,y1,x2,y2] integers 0..1000 for that single photo. Do not enclose unrelated parts merely to make a large rectangle. Return an entry for every supplied feature index and a brief reason.",
+  "prompt_sha256": "acb407ab1c58c42f702182905277074f9f7e4c1e57330a96bc05d72c26a8526d",
+  "source_run": "evaluation\\results\\8b-production-final\\cap-multi\\result.json",
+  "seconds": 8.703,
+  "original_features": [
+    {
+      "image_id": "40016330299_1",
+      "description": "На передней части кепки расположен вышитый прямоугольный нашивной знак с изображением персонажа и надписью 'SAM'.",
+      "bbox": [
+        273,
+        343,
+        527,
+        543
+      ]
+    },
+    {
+      "image_id": "40016330299_1",
+      "description": "На боковой части кепки видна черная сетчатая ткань с оранжевой окантовкой.",
+      "bbox": [
+        657,
+        267,
+        917,
+        587
+      ]
+    },
+    {
+      "image_id": "40016330299_4",
+      "description": "На внутренней стороне кепки видна оранжевая окантовка с повторяющейся надписью '[× CAPSLAB]'.",
+      "bbox": [
+        327,
+        287,
+        857,
+        647
+      ]
+    },
+    {
+      "image_id": "40016330299_5",
+      "description": "На нашивке видна вышитая надпись 'SAM' желтым цветом в левом верхнем углу.",
+      "bbox": [
+        176,
+        243,
+        301,
+        317
+      ]
+    }
+  ],
+  "target_name": "Бейсболка с сеточкой CAPSLAB CL/LOO/1/SAM1 Looney Tunes Yosemite Sam",
+  "result": {
+    "verified_features": [
+      {
+        "feature_index": 1,
+        "image_id": "40016330299_1",
+        "supported": true,
+        "bbox": [
+          273,
+          341,
+          530,
+          543
+        ],
+        "reason": "На передней части кепки виден вышитый прямоугольный нашивной знак с изображением персонажа и надписью 'SAM'."
+      },
+      {
+        "feature_index": 2,
+        "image_id": "40016330299_1",
+        "supported": true,
+        "bbox": [
+          600,
+          255,
+          915,
+          605
+        ],
+        "reason": "На боковой части кепки видна черная сетчатая ткань с оранжевой окантовкой."
+      },
+      {
+        "feature_index": 3,
+        "image_id": "40016330299_4",
+        "supported": true,
+        "bbox": [
+          325,
+          240,
+          875,
+          645
+        ],
+        "reason": "На внутренней стороне кепки видна оранжевая окантовка с повторяющейся надписью '[× CAPSLAB]'."
+      },
+      {
+        "feature_index": 4,
+        "image_id": "40016330299_5",
+        "supported": true,
+        "bbox": [
+          165,
+          240,
+          300,
+          320
+        ],
+        "reason": "На нашивке видна вышитая надпись 'SAM' желтым цветом в левом верхнем углу."
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 412,
+    "prompt_tokens": 4984,
+    "total_tokens": 5396,
+    "prompt_tokens_details": {
+      "cached_tokens": 3
+    }
+  },
+  "retained_features": [
+    {
+      "image_id": "40016330299_1",
+      "description": "На передней части кепки расположен вышитый прямоугольный нашивной знак с изображением персонажа и надписью 'SAM'.",
+      "bbox": [
+        273,
+        341,
+        530,
+        543
+      ]
+    },
+    {
+      "image_id": "40016330299_1",
+      "description": "На боковой части кепки видна черная сетчатая ткань с оранжевой окантовкой.",
+      "bbox": [
+        600,
+        255,
+        915,
+        605
+      ]
+    },
+    {
+      "image_id": "40016330299_4",
+      "description": "На внутренней стороне кепки видна оранжевая окантовка с повторяющейся надписью '[× CAPSLAB]'.",
+      "bbox": [
+        325,
+        240,
+        875,
+        645
+      ]
+    },
+    {
+      "image_id": "40016330299_5",
+      "description": "На нашивке видна вышитая надпись 'SAM' желтым цветом в левом верхнем углу.",
+      "bbox": [
+        165,
+        240,
+        300,
+        320
+      ]
+    }
+  ],
+  "enough_for_three_feature_contract": true
+}

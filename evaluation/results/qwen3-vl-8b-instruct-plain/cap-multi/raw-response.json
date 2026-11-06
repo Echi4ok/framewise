@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"40016330299_1\",\n      \"description\": \"На передней панели бейсболки нашивка с персонажем Йоземит Сэм и надписью Sam, окантованная оранжевой нитью.\",\n      \"bbox\": [274, 342, 528, 542]\n    },\n    {\n      \"image_id\": \"40016330299_1\",\n      \"description\": \"Сетчатая часть бейсболки с тканевой нашивкой с желтой надписью Yosemite Sam.\",\n      \"bbox\": [648, 256, 912, 600]\n    },\n    {\n      \"image_id\": \"40016330299_4\",\n      \"description\": \"Внутренняя часть козырька оранжевая, с черными строчками и брендированной тканью.\",\n      \"bbox\": [82, 342, 738, 800]\n    },\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Детализированное изображение нашивки с персонажем Йоземит Сэм, держащим пистолет и с надписью SAM.\",\n      \"bbox\": [74, 182, 912, 812]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793875265,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 370,
+    "prompt_tokens": 4908,
+    "total_tokens": 5278,
+    "prompt_tokens_details": {
+      "cached_tokens": 409
+    }
+  },
+  "id": "chatcmpl-UuUcVZuEfJJN41yxxfIFYVw5VWvIxMyC",
+  "timings": {
+    "cache_n": 409,
+    "prompt_n": 4499,
+    "prompt_ms": 3264.414,
+    "prompt_per_token_ms": 0.7255865747943988,
+    "prompt_per_second": 1378.1952901807185,
+    "predicted_n": 370,
+    "predicted_ms": 4117.823,
+    "predicted_per_token_ms": 11.159411924119242,
+    "predicted_per_second": 89.61045678748212
+  }
+}

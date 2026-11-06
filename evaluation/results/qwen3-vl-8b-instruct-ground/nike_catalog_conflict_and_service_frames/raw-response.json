@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"detections\": [\n    {\n      \"target_id\": \"target-1\",\n      \"image_id\": \"43603530299_1\",\n      \"bbox\": [86, 466, 913, 852]\n    },\n    {\n      \"target_id\": \"target-2\",\n      \"image_id\": \"43603530299_3\",\n      \"bbox\": [86, 319, 913, 852]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793875363,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 129,
+    "prompt_tokens": 3146,
+    "total_tokens": 3275,
+    "prompt_tokens_details": {
+      "cached_tokens": 76
+    }
+  },
+  "id": "chatcmpl-dfVPfiwQKlee5xw7rcGmHbbdt1Nxtoz5",
+  "timings": {
+    "cache_n": 76,
+    "prompt_n": 3070,
+    "prompt_ms": 2079.336,
+    "prompt_per_token_ms": 0.6773081433224755,
+    "prompt_per_second": 1476.4328612595561,
+    "predicted_n": 129,
+    "predicted_ms": 1286.012,
+    "predicted_per_token_ms": 10.04696875,
+    "predicted_per_second": 99.53250825031182
+  }
+}

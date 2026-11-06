@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"selected_labels\": [\"A\", \"B\"],\n  \"reason\": \"Фото A и B показывают обувь с разных ракурсов: A — фронтальный вид, B — боковой вид, что позволяет оценить форму и детали дизайна. Фото C и D — таблицы размеров и доставки, а Photo E — текстовые инструкции, которые не являются фотографиями продукта.\"\n}"
+      }
+    }
+  ],
+  "created": 1793874497,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 100,
+    "prompt_tokens": 1236,
+    "total_tokens": 1336,
+    "prompt_tokens_details": {
+      "cached_tokens": 1235
+    }
+  },
+  "id": "chatcmpl-2Z8ZbSahmVxN3IS0fgA1Bf8BX3t3Buc8",
+  "timings": {
+    "cache_n": 1235,
+    "prompt_n": 1,
+    "prompt_ms": 19.71,
+    "prompt_per_token_ms": 19.71,
+    "prompt_per_second": 50.735667174023334,
+    "predicted_n": 100,
+    "predicted_ms": 791.555,
+    "predicted_per_token_ms": 7.99550505050505,
+    "predicted_per_second": 125.0702730700962
+  }
+}

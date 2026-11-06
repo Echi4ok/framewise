@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-05",
+  "scope": "Small manually selected development set. Prompts were adjusted on these photos. First-response validation is measured before application repair. Manual labels are subjective. Fixed-target localization is a separate task from feature generation. Native llama.cpp timings depend on warmup and caches.",
+  "candidates": [
+    {
+      "series": "4b-production-final",
+      "model": "qwen3-vl:4b-instruct",
+      "total_calls": 10,
+      "first_response_contract_valid": 8,
+      "positive_calls": 5,
+      "positive_first_response_contract_valid": 3,
+      "negative_controls": 2,
+      "negative_correct_abstentions": 2,
+      "selection_calls": 3,
+      "selection_valid_ids": 3,
+      "median_positive_seconds": 4.547,
+      "grounding_targets": 9,
+      "grounding_iou_at_least_50": 7,
+      "grounding_mean_iou": 0.8077,
+      "manual": {
+        "features": 17,
+        "text_supported": 13,
+        "box_match": 12,
+        "physical_product": 16,
+        "all_three": 8,
+        "extra_duplicates": 2,
+        "all_three_distinct": 6
+      }
+    },
+    {
+      "series": "8b-production-final",
+      "model": "qwen3-vl:8b-instruct",
+      "total_calls": 10,
+      "first_response_contract_valid": 9,
+      "positive_calls": 5,
+      "positive_first_response_contract_valid": 4,
+      "negative_controls": 2,
+      "negative_correct_abstentions": 1,
+      "selection_calls": 3,
+      "selection_valid_ids": 3,
+      "median_positive_seconds": 7.438,
+      "grounding_targets": 9,
+      "grounding_iou_at_least_50": 7,
+      "grounding_mean_iou": 0.7813,
+      "manual": {
+        "features": 17,
+        "text_supported": 15,
+        "box_match": 11,
+        "physical_product": 17,
+        "all_three": 10,
+        "extra_duplicates": 4,
+        "all_three_distinct": 9
+      }
+    }
+  ],
+  "second_pass": {
+    "cases": [
+      "cap-multi",
+      "demix-annotations"
+    ],
+    "extra_seconds": [
+      8.703,
+      9.641
+    ],
+    "focused_boxes_before": 5,
+    "focused_boxes_after": 5,
+    "total_features": 8,
+    "unsupported_claims_or_duplicates_rejected_by_model": 0,
+    "adopted": false
+  },
+  "name_only_exploration": {
+    "cases_each_strategy": [
+      "target-jacket",
+      "nike-conflict"
+    ],
+    "additional_name_only_control": "negative-chart",
+    "observation": "Both strategies focused jacket. Name-only retained visible Nike details and correctly abstained on size chart that no-name analyzed as table. Product descriptions remained excluded."
+  },
+  "ocr_ban_probe": {
+    "case": "cap-multi",
+    "observation": "Appended no-transcription instruction did not eliminate guessed tape text. No demonstrated improvement; not adopted."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"35472730299_1\",\n      \"description\": \"Белый логотип Demix на правом бедре тайтсов.\",\n      \"bbox\": [\n        720,\n        128,\n        772,\n        163\n      ]\n    },\n    {\n      \"image_id\": \"35472730299_9\",\n      \"description\": \"Сетчатые вставки на бедрах тайтсов, видимые на фотографии.\",\n      \"bbox\": [\n        450,\n        342,\n        550,\n        500\n      ]\n    },\n    {\n      \"image_id\": \"35472730299_10\",\n      \"description\": \"Светоотражающий логотип Demix на правом бедре тайтсов, видимый в темноте.\",\n      \"bbox\": [\n        475,\n        168,\n        550,\n        200\n      ]\n    },\n    {\n      \"image_id\": \"35472730299_13\",\n      \"description\": \"Светоотражающий логотип Demix на правом бедре тайтсов, видимый в темноте.\",\n      \"bbox\": [\n        475,\n        168,\n        550,\n        200\n      ]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793873780,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 367,
+    "prompt_tokens": 5769,
+    "total_tokens": 6136,
+    "prompt_tokens_details": {
+      "cached_tokens": 314
+    }
+  },
+  "id": "chatcmpl-1DjhR9QoygQSWh0cqn3i0i4xMmnj9Ws0",
+  "timings": {
+    "cache_n": 314,
+    "prompt_n": 5455,
+    "prompt_ms": 1770.298,
+    "prompt_per_token_ms": 0.3245275893675527,
+    "prompt_per_second": 3081.4021142203173,
+    "predicted_n": 367,
+    "predicted_ms": 2759.225,
+    "predicted_per_token_ms": 7.538866120218579,
+    "predicted_per_second": 132.64594224827624
+  }
+}

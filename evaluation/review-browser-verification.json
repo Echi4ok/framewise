@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-06",
+  "url": "http://127.0.0.1:5173/",
+  "realModel": "Qwen3-VL-8B-Instruct Q4_K_M",
+  "uploads": [
+    "43358020299_1.jpg",
+    "43358020299_3.jpg",
+    "43358020299_7.jpg"
+  ],
+  "autoSelection": "completed; all three selected",
+  "cancel": "analyze cancelled; selection retained; retry completed",
+  "features": [
+    "1На боковой стороне чемодана видна надпись 'TORBER' серебристого цвета.↗",
+    "2Внутренняя часть чемодана имеет светло-голубой цвет с узором из треугольников и кругов.↗",
+    "3На чемодане установлен замок с кодовым механизмом и красным логотипом.↗"
+  ],
+  "desktopGeometry": {
+    "activeFeature": "3На чемодане установлен замок с кодовым механизмом и красным логотипом.↗",
+    "activePhoto": "Фото 3 — Чемодан",
+    "frame": {
+      "bottom": 596.9317779541016,
+      "height": 439.9908752441406,
+      "left": 123.58635711669922,
+      "right": 614.7681503295898,
+      "top": 156.94090270996094,
+      "width": 491.1817932128906,
+      "x": 123.58635711669922,
+      "y": 156.94090270996094
+    },
+    "horizontalOverflow": false,
+    "image": {
+      "bottom": 596.9181365966797,
+      "height": 439.9772338867187,
+      "left": 204.17726135253903,
+      "right": 534.1499786376953,
+      "top": 156.94090270996094,
+      "width": 329.97271728515625,
+      "x": 204.17726135253903,
+      "y": 156.94090270996094
+    },
+    "svg": {
+      "bottom": 596.9181365966797,
+      "height": 439.9772338867187,
+      "left": 204.17726135253903,
+      "right": 534.1635894775391,
+      "top": 156.94090270996094,
+      "width": 329.986328125,
+      "x": 204.17726135253903,
+      "y": 156.94090270996094
+    }
+  },
+  "mobile": {
+    "width": 390,
+    "documentWidth": 375,
+    "imageWidth": 258.7499694824219,
+    "imageHeight": 344.9999694824219,
+    "svgWidth": 258.7499694824219,
+    "svgHeight": 344.9999694824219,
+    "overflow": false,
+    "verification": "DOM only"
+  },
+  "reset": {
+    "name": "",
+    "previews": 0,
+    "results": 0,
+    "continueDisabled": true
+  },
+  "feedbackButton": {
+    "error": {
+      "height": 45,
+      "offsetDocumentY": 671,
+      "width": 139
+    },
+    "idle": {
+      "height": 45,
+      "offsetDocumentY": 671,
+      "width": 139
+    }
+  },
+  "consoleErrors": [],
+  "quality": "This verifies integration and geometry, not semantic accuracy.",
+  "finalSmoke": {
+    "activePhoto": "Фото 7 — Чемодан TORBER СЕЛИГЕР 35 л",
+    "error": null,
+    "features": [
+      "1На боковой стороне чемодана видна надпись TORBER.↗",
+      "2Внутренняя часть чемодана имеет светло-голубой цвет с узором из треугольников и кругов.↗",
+      "3На чемодане установлен замок с кодовым механизмом и надписью TORBER на застёжке.↗"
+    ],
+    "imageReady": true,
+    "svgCount": 1
+  }
+}

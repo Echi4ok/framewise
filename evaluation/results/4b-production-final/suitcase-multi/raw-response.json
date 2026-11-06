@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"43358020299_1\",\n      \"description\": \"Серый чемодан с диагональным геометрическим узором на корпусе\",\n      \"bbox\": [\n        272,\n        47,\n        730,\n        948\n      ]\n    },\n    {\n      \"image_id\": \"43358020299_3\",\n      \"description\": \"Внутренняя часть чемодана с голубой тканью, украшенной повторяющимся узором из геометрических фигур\",\n      \"bbox\": [\n        84,\n        272,\n        915,\n        729\n      ]\n    },\n    {\n      \"image_id\": \"43358020299_7\",\n      \"description\": \"Застежки-молнии с металлическими пластины и кодовый замок на корпусе чемодана\",\n      \"bbox\": [\n        348,\n        515,\n        788,\n        705\n      ]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793874485,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 289,
+    "prompt_tokens": 5005,
+    "total_tokens": 5294,
+    "prompt_tokens_details": {
+      "cached_tokens": 495
+    }
+  },
+  "id": "chatcmpl-1UER9B1MPjB4aj2gMYpuiAhIlk4ADUx9",
+  "timings": {
+    "cache_n": 495,
+    "prompt_n": 4510,
+    "prompt_ms": 1613.519,
+    "prompt_per_token_ms": 0.35776474501108646,
+    "prompt_per_second": 2795.1328741712987,
+    "predicted_n": 289,
+    "predicted_ms": 2250.448,
+    "predicted_per_token_ms": 7.814055555555555,
+    "predicted_per_second": 127.9745188513576
+  }
+}

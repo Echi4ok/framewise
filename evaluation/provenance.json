@@ -1,0 +1,91 @@
+{
+  "matched_cases": [
+    {
+      "case": "cap-multi",
+      "same_system_prompt": true,
+      "same_sent_image_bytes": true,
+      "same_image_id_order": true
+    },
+    {
+      "case": "cap-single",
+      "same_system_prompt": true,
+      "same_sent_image_bytes": true,
+      "same_image_id_order": true
+    },
+    {
+      "case": "demix-annotations",
+      "same_system_prompt": true,
+      "same_sent_image_bytes": true,
+      "same_image_id_order": true
+    },
+    {
+      "case": "demix-gallery-select",
+      "same_system_prompt": true,
+      "same_sent_image_bytes": true,
+      "same_image_id_order": true
+    },
+    {
+      "case": "largest-gallery-select",
+      "same_system_prompt": true,
+      "same_sent_image_bytes": true,
+      "same_image_id_order": true
+    },
+    {
+      "case": "negative-blank",
+      "same_system_prompt": true,
+      "same_sent_image_bytes": true,
+      "same_image_id_order": true
+    },
+    {
+      "case": "negative-chart",
+      "same_system_prompt": true,
+      "same_sent_image_bytes": true,
+      "same_image_id_order": true
+    },
+    {
+      "case": "nike-conflict",
+      "same_system_prompt": true,
+      "same_sent_image_bytes": true,
+      "same_image_id_order": true
+    },
+    {
+      "case": "nike-select",
+      "same_system_prompt": true,
+      "same_sent_image_bytes": true,
+      "same_image_id_order": true
+    },
+    {
+      "case": "suitcase-multi",
+      "same_system_prompt": true,
+      "same_sent_image_bytes": true,
+      "same_image_id_order": true
+    }
+  ],
+  "all_equal": true,
+  "scope": "System prompt, ordered IDs and JPEG payload hashes match. The final application's name-only user context is a later change. Earlier4B hashes are explicitly reconstructed from their recorded recipe.",
+  "runtime": {
+    "name": "llama.cpp",
+    "release": "b12124",
+    "backend": "CUDA13.4",
+    "context_tokens": 12288,
+    "parallel_slots": 1,
+    "image_min_tokens": 1024,
+    "image_max_tokens": 1536,
+    "gpu": "NVIDIA RTX5070 12GB",
+    "driver": "610.88"
+  },
+  "model_blobs": {
+    "4b": {
+      "model_sha256": "3a859c4dca6883593e389a08987f04762f2a374d475cabc1538360473a72b1da",
+      "projector_sha256": "70ac570fd36b65a64fbb99883c34d5196368c1cf8f63d8402802a34a0ed2b363",
+      "model_bytes": 2497888288,
+      "projector_bytes": 839325760
+    },
+    "8b": {
+      "model_sha256": "a0c1f7c1356ebc4135b6d12f726c18487669f1a7099156323d0f7b4ca91aca99",
+      "projector_sha256": "85aa79666ee786bcc4fe69ac343db5ad468b71ad6272c12bfd8dfb29a8bdf18a",
+      "model_bytes": 5028391520,
+      "projector_bytes": 1162568672
+    }
+  }
+}

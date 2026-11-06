@@ -1,0 +1,85 @@
+{
+  "source_page": "https://dummyjson.com/products/1",
+  "source_url": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp",
+  "product": {
+    "id": "manual-ab6c29bc66c7415eb8b501c2cc1bb8d2",
+    "name": "Тушь для ресниц",
+    "description": "",
+    "images": [
+      {
+        "id": "manual-ab6c29bc66c7415eb8b501c2cc1bb8d2-1",
+        "url": "/api/media/manual-ab6c29bc66c7415eb8b501c2cc1bb8d2-1",
+        "width": 1000,
+        "height": 1000
+      }
+    ]
+  },
+  "import_status": 201,
+  "request": {
+    "product_id": "manual-ab6c29bc66c7415eb8b501c2cc1bb8d2",
+    "image_ids": [
+      "manual-ab6c29bc66c7415eb8b501c2cc1bb8d2-1"
+    ]
+  },
+  "status": 200,
+  "seconds": 6.48,
+  "response": {
+    "features": [
+      {
+        "image_id": "manual-ab6c29bc66c7415eb8b501c2cc1bb8d2-1",
+        "description": "На корпусе трубы туші виден зеленый логотип 'essence'.",
+        "bbox": [
+          280,
+          397,
+          412,
+          458
+        ],
+        "id": "feature-1"
+      },
+      {
+        "image_id": "manual-ab6c29bc66c7415eb8b501c2cc1bb8d2-1",
+        "description": "На корпусе трубы туші видна зеленая надпись 'Lash Princess'.",
+        "bbox": [
+          280,
+          458,
+          412,
+          575
+        ],
+        "id": "feature-2"
+      },
+      {
+        "image_id": "manual-ab6c29bc66c7415eb8b501c2cc1bb8d2-1",
+        "description": "На крышке трубы туші виден зеленый декоративный узор в виде сердца с кисточкой.",
+        "bbox": [
+          560,
+          640,
+          700,
+          870
+        ],
+        "id": "feature-3"
+      },
+      {
+        "image_id": "manual-ab6c29bc66c7415eb8b501c2cc1bb8d2-1",
+        "description": "На корпусе трубы туші виден зеленый круглый значок с надписью 'false lash effect mascara'.",
+        "bbox": [
+          290,
+          650,
+          400,
+          770
+        ],
+        "id": "feature-4"
+      },
+      {
+        "image_id": "manual-ab6c29bc66c7415eb8b501c2cc1bb8d2-1",
+        "description": "На крышке трубы туші видна черная кисточка с черными щетинками.",
+        "bbox": [
+          610,
+          95,
+          670,
+          640
+        ],
+        "id": "feature-5"
+      }
+    ]
+  }
+}

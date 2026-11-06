@@ -1,0 +1,204 @@
+{
+  "case": "suitcase_multiple_views",
+  "model": "qwen3-vl:8b-instruct",
+  "variant": "improved",
+  "catalog_included": false,
+  "prompt": "Locate precisely each requested visible detail in its specified image. Return JSON with detections containing target_id, exact image_id and bbox [x1,y1,x2,y2] integers normalized to 0..1000 for that entire image. Use tight boxes. The targets are [{\"target_id\": \"target-1\", \"image_id\": \"43358020299_1\", \"label\": \"extended telescopic handle\"}, {\"target_id\": \"target-2\", \"image_id\": \"43358020299_3\", \"label\": \"blue lining across both halves\"}, {\"target_id\": \"target-3\", \"image_id\": \"43358020299_3\", \"label\": \"X-shaped retention straps\"}, {\"target_id\": \"target-4\", \"image_id\": \"43358020299_7\", \"label\": \"black combination lock body\"}]",
+  "image_ids": [
+    "43358020299_1",
+    "43358020299_3",
+    "43358020299_7"
+  ],
+  "endpoint": "http://127.0.0.1:11436/v1",
+  "prompt_sha256": "eebc8680944e55c50e9b74010bc87662b6d681d130c5a13b042d94a5ffa360c4",
+  "target_name_included": false,
+  "input_images": [
+    {
+      "image_id": "43358020299_1",
+      "path": "data/images/43358020299_1.jpg",
+      "source_sha256": "f3fad5c3467945ab44315381cfd21907253e9b0da7a20130e7c8f98fd513a710",
+      "canonical_jpeg_sha256": "87580fc2300e9d8069f8994a1df1cf3a8bf8a4622b4b0fa0e7e634d223d5b822",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "43358020299_3",
+      "path": "data/images/43358020299_3.jpg",
+      "source_sha256": "accfb9947db6a203d6cf6ce13dd9487c6ade3ff37bcad2f63b59ccee8050370c",
+      "canonical_jpeg_sha256": "046625525d5647b5913aef89313ea9cc5ee560b10fbf26753b5e48e2f86c56f7",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "43358020299_7",
+      "path": "data/images/43358020299_7.jpg",
+      "source_sha256": "64b228e8875f9c0999ea8e58cdcc1957a3d961bf242898a724b8635f3140e03c",
+      "canonical_jpeg_sha256": "05aabce4484ee3ed090409d0175db5803878ca856a665dd1756d55c76739b5c5",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    }
+  ],
+  "sent_image_sha256": [
+    "87580fc2300e9d8069f8994a1df1cf3a8bf8a4622b4b0fa0e7e634d223d5b822",
+    "046625525d5647b5913aef89313ea9cc5ee560b10fbf26753b5e48e2f86c56f7",
+    "05aabce4484ee3ed090409d0175db5803878ca856a665dd1756d55c76739b5c5"
+  ],
+  "seconds": 6.5,
+  "usage": {
+    "completion_tokens": 246,
+    "prompt_tokens": 4724,
+    "total_tokens": 4970,
+    "prompt_tokens_details": {
+      "cached_tokens": 75
+    }
+  },
+  "finish_reason": "stop",
+  "result": {
+    "detections": [
+      {
+        "target_id": "target-1",
+        "image_id": "43358020299_1",
+        "bbox": [
+          403,
+          51,
+          592,
+          470
+        ]
+      },
+      {
+        "target_id": "target-2",
+        "image_id": "43358020299_3",
+        "bbox": [
+          104,
+          274,
+          908,
+          708
+        ]
+      },
+      {
+        "target_id": "target-3",
+        "image_id": "43358020299_3",
+        "bbox": [
+          532,
+          292,
+          864,
+          702
+        ]
+      },
+      {
+        "target_id": "target-4",
+        "image_id": "43358020299_7",
+        "bbox": [
+          414,
+          536,
+          792,
+          699
+        ]
+      }
+    ]
+  },
+  "valid": true,
+  "grounding": [
+    {
+      "target_id": "target-1",
+      "image_id": "43358020299_1",
+      "label": "extended telescopic handle",
+      "reference_bbox": [
+        405,
+        50,
+        595,
+        475
+      ],
+      "prediction": {
+        "target_id": "target-1",
+        "image_id": "43358020299_1",
+        "bbox": [
+          403,
+          51,
+          592,
+          470
+        ]
+      },
+      "iou": 0.9603,
+      "pass_iou_50": true
+    },
+    {
+      "target_id": "target-2",
+      "image_id": "43358020299_3",
+      "label": "blue lining across both halves",
+      "reference_bbox": [
+        110,
+        270,
+        900,
+        705
+      ],
+      "prediction": {
+        "target_id": "target-2",
+        "image_id": "43358020299_3",
+        "bbox": [
+          104,
+          274,
+          908,
+          708
+        ]
+      },
+      "iou": 0.967,
+      "pass_iou_50": true
+    },
+    {
+      "target_id": "target-3",
+      "image_id": "43358020299_3",
+      "label": "X-shaped retention straps",
+      "reference_bbox": [
+        535,
+        280,
+        860,
+        700
+      ],
+      "prediction": {
+        "target_id": "target-3",
+        "image_id": "43358020299_3",
+        "bbox": [
+          532,
+          292,
+          864,
+          702
+        ]
+      },
+      "iou": 0.947,
+      "pass_iou_50": true
+    },
+    {
+      "target_id": "target-4",
+      "image_id": "43358020299_7",
+      "label": "black combination lock body",
+      "reference_bbox": [
+        415,
+        545,
+        790,
+        710
+      ],
+      "prediction": {
+        "target_id": "target-4",
+        "image_id": "43358020299_7",
+        "bbox": [
+          414,
+          536,
+          792,
+          699
+        ]
+      },
+      "iou": 0.8785,
+      "pass_iou_50": true
+    }
+  ]
+}

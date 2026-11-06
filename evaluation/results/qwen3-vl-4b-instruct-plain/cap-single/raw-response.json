@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Нашивка с персонажем Йоземит Сэм, оранжевая окантовка, желтая надпись \\\"SAM\\\"\",\n      \"bbox\": [75, 183, 900, 807]\n    },\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Персонаж Йоземит Сэм в красной рубашке, с пистолетом в руке\",\n      \"bbox\": [135, 260, 830, 745]\n    },\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Оранжевый козырьк на бейсболке, видимый на фоне нашивки\",\n      \"bbox\": [300, 215, 830, 520]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793873669,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 267,
+    "prompt_tokens": 1897,
+    "total_tokens": 2164,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-4CFxUo449wbLKoCqM1U1o3VnHi3TlEhF",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 1897,
+    "prompt_ms": 5680.008,
+    "prompt_per_token_ms": 2.994205587770163,
+    "prompt_per_second": 333.97840284731996,
+    "predicted_n": 267,
+    "predicted_ms": 7692.03,
+    "predicted_per_token_ms": 28.917406015037592,
+    "predicted_per_second": 34.58124838306663
+  }
+}

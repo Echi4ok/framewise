@@ -1,0 +1,8 @@
+* text=auto
+*.csv -text
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.sh text eol=lf
+*.ttf binary

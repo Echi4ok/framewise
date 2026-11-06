@@ -1,0 +1,31 @@
+{
+  "source_url": "https://storage.googleapis.com/generativeai-downloads/images/scones.jpg",
+  "variant": "target-only-v4",
+  "product": {
+    "id": "manual-02511a8efffb4ffdb5cccc6bcf3b6b81",
+    "name": "Выпечка на фотографии",
+    "description": "",
+    "images": [
+      {
+        "id": "manual-02511a8efffb4ffdb5cccc6bcf3b6b81-1",
+        "url": "/api/media/manual-02511a8efffb4ffdb5cccc6bcf3b6b81-1",
+        "width": 1280,
+        "height": 853
+      }
+    ]
+  },
+  "request": {
+    "product_id": "manual-02511a8efffb4ffdb5cccc6bcf3b6b81",
+    "image_ids": [
+      "manual-02511a8efffb4ffdb5cccc6bcf3b6b81-1"
+    ]
+  },
+  "status": 502,
+  "seconds": 7.61,
+  "response": {
+    "detail": {
+      "code": "invalid_model_response",
+      "message": "Модель дважды вернула некорректный результат. Попробуйте другой набор фотографий."
+    }
+  }
+}

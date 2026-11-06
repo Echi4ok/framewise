@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"selected_labels\": [\"A\", \"D\", \"F\", \"I\"],\n  \"reason\": \"Фото A показывает общий вид тканей, Photo D — деталь эластичной ткани, Photo F — широкий пояс, Photo I — сетчатые вставки. Эти изображения вместе демонстрируют ключевые конструктивные и функциональные особенности продукта.\"\n}"
+      }
+    }
+  ],
+  "created": 1793874036,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 97,
+    "prompt_tokens": 1288,
+    "total_tokens": 1385,
+    "prompt_tokens_details": {
+      "cached_tokens": 196
+    }
+  },
+  "id": "chatcmpl-mFb8PfK8gcpIN0NvNVOAdEYvQkRZFLx6",
+  "timings": {
+    "cache_n": 196,
+    "prompt_n": 1092,
+    "prompt_ms": 332.491,
+    "prompt_per_token_ms": 0.3044789377289377,
+    "prompt_per_second": 3284.2994246460808,
+    "predicted_n": 97,
+    "predicted_ms": 615.652,
+    "predicted_per_token_ms": 6.413041666666667,
+    "predicted_per_second": 155.93224743848796
+  }
+}

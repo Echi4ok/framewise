@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"selected_image_ids\": [\"43603530299_1\", \"43603530299_3\", \"43603530299_6\", \"43603530299_7\"],\n  \"reason\": \"Фотографии демонстрируют обувь с разных ракурсов, включая вид сбоку и сзади, что помогает покупателю оценить форму и детали модели.\"\n}"
+      }
+    }
+  ],
+  "created": 1793873740,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 123,
+    "prompt_tokens": 1431,
+    "total_tokens": 1554,
+    "prompt_tokens_details": {
+      "cached_tokens": 3
+    }
+  },
+  "id": "chatcmpl-rppNaM2Q4WYCj0qKDORbOhlFRpcw4gOE",
+  "timings": {
+    "cache_n": 3,
+    "prompt_n": 1428,
+    "prompt_ms": 650.916,
+    "prompt_per_token_ms": 0.45582352941176474,
+    "prompt_per_second": 2193.8314621241448,
+    "predicted_n": 123,
+    "predicted_ms": 1002.481,
+    "predicted_per_token_ms": 8.21705737704918,
+    "predicted_per_second": 121.69806709553598
+  }
+}

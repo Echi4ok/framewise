@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-06",
+  "base_url": "http://127.0.0.1:8000",
+  "checks": [
+    {
+      "name": "public_webp",
+      "url": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp",
+      "status": 201,
+      "seconds": 0.588,
+      "product": {
+        "id": "manual-3266409e05a8451a998f1a627b546fef",
+        "name": "Проверка URL",
+        "description": "",
+        "images": [
+          {
+            "id": "manual-3266409e05a8451a998f1a627b546fef-1",
+            "url": "/api/media/manual-3266409e05a8451a998f1a627b546fef-1",
+            "width": 1000,
+            "height": 1000
+          }
+        ]
+      },
+      "media_status": 200,
+      "media_bytes": 47041,
+      "media_content_type": "image/jpeg"
+    },
+    {
+      "name": "private_url",
+      "url": "http://127.0.0.1/private.jpg",
+      "status": 422,
+      "seconds": 0.001,
+      "error": {
+        "detail": {
+          "code": "private_image_url",
+          "message": "Ссылка должна вести на общедоступный сервер в интернете."
+        }
+      }
+    }
+  ]
+}

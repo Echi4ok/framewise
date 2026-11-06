@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"35472730299_1\",\n      \"description\": \"Облегающий крой тайтсов обеспечивает плотную посадку и комфорт при движении, подчеркивая силуэт ребенка во время тренировок.\",\n      \"bbox\": [216, 0, 880, 976]\n    },\n    {\n      \"image_id\": \"35472730299_9\",\n      \"description\": \"Сетчатые вставки на бедрах обеспечивают дополнительную вентиляцию, помогая поддерживать охлаждение тела и комфорт даже при интенсивных тренировках.\",\n      \"bbox\": [100, 284, 430, 440]\n    },\n    {\n      \"image_id\": \"35472730299_10\",\n      \"description\": \"Светоотражающие элементы — лого Demix на бедре и значок на кроссовках — делают ребенка заметным в темное время суток, повышая безопасность во время вечерних тренировок.\",\n      \"bbox\": [300, 150, 580, 300]\n    },\n    {\n      \"image_id\": \"35472730299_13\",\n      \"description\": \"Ткань с технологией MOVI TEX быстро сохнет и эффективно отводит влагу от тела, обеспечивая комфорт и сухость даже при интенсивной физической активности.\",\n      \"bbox\": [300, 150, 580, 300]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793873736,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 417,
+    "prompt_tokens": 5523,
+    "total_tokens": 5940,
+    "prompt_tokens_details": {
+      "cached_tokens": 68
+    }
+  },
+  "id": "chatcmpl-JtEkTuxsr6ZLqgzGqB9IW8s9beHN769D",
+  "timings": {
+    "cache_n": 68,
+    "prompt_n": 5455,
+    "prompt_ms": 4166.324,
+    "prompt_per_token_ms": 0.76376241979835,
+    "prompt_per_second": 1309.3076774633948,
+    "predicted_n": 417,
+    "predicted_ms": 5905.226,
+    "predicted_per_token_ms": 14.195254807692306,
+    "predicted_per_second": 70.44607606889221
+  }
+}

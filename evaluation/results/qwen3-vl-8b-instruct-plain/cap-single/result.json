@@ -1,0 +1,55 @@
+{
+  "case": "cap-single",
+  "model": "qwen3-vl:8b-instruct",
+  "variant": "plain",
+  "catalog_included": true,
+  "prompt": "Analyze the product photos. Find 3-5 product features. Write short Russian descriptions with bounding boxes normalized 0..1000 [x1,y1,x2,y2] and exact image_id. Return status and features as JSON.",
+  "image_ids": [
+    "40016330299_5"
+  ],
+  "endpoint": "http://127.0.0.1:11436/v1",
+  "prompt_sha256": "f390e89b1c740acbad81fa299064bffc4aeb3c36b267218d15144008388f1699",
+  "target_name_included": false,
+  "input_images": [
+    {
+      "image_id": "40016330299_5",
+      "path": "data/images/40016330299_5.jpg",
+      "source_sha256": "6da6e3fcb8f1865506dd46cf6f8e85a3759f71a682fca55d235938262d5e1094",
+      "canonical_jpeg_sha256": "99b4cb52fdef16e90af92c40e35d02671e91bc5d24cf08bc6f9fc2eef5502fb6",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    }
+  ],
+  "sent_image_sha256": [
+    "99b4cb52fdef16e90af92c40e35d02671e91bc5d24cf08bc6f9fc2eef5502fb6"
+  ],
+  "seconds": 2.625,
+  "usage": {
+    "completion_tokens": 105,
+    "prompt_tokens": 1902,
+    "total_tokens": 2007,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "result": {
+    "status": "ok",
+    "features": [
+      {
+        "image_id": "40016330299_5",
+        "description": "Нашивка с изображением персонажа Йоземит Сэм и надписью 'SAM' с оранжевой окантовкой.",
+        "bbox": [
+          70,
+          180,
+          900,
+          800
+        ]
+      }
+    ]
+  },
+  "valid": false
+}

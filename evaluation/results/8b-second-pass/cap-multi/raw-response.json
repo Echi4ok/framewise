@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"verified_features\": [\n        {\n            \"feature_index\": 1,\n            \"image_id\": \"40016330299_1\",\n            \"supported\": true,\n            \"bbox\": [273, 341, 530, 543],\n            \"reason\": \"На передней части кепки виден вышитый прямоугольный нашивной знак с изображением персонажа и надписью 'SAM'.\"\n        },\n        {\n            \"feature_index\": 2,\n            \"image_id\": \"40016330299_1\",\n            \"supported\": true,\n            \"bbox\": [600, 255, 915, 605],\n            \"reason\": \"На боковой части кепки видна черная сетчатая ткань с оранжевой окантовкой.\"\n        },\n        {\n            \"feature_index\": 3,\n            \"image_id\": \"40016330299_4\",\n            \"supported\": true,\n            \"bbox\": [325, 240, 875, 645],\n            \"reason\": \"На внутренней стороне кепки видна оранжевая окантовка с повторяющейся надписью '[× CAPSLAB]'.\"\n        },\n        {\n            \"feature_index\": 4,\n            \"image_id\": \"40016330299_5\",\n            \"supported\": true,\n            \"bbox\": [165, 240, 300, 320],\n            \"reason\": \"На нашивке видна вышитая надпись 'SAM' желтым цветом в левом верхнем углу.\"\n        }\n    ]\n}"
+      }
+    }
+  ],
+  "created": 1793875562,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 412,
+    "prompt_tokens": 4984,
+    "total_tokens": 5396,
+    "prompt_tokens_details": {
+      "cached_tokens": 3
+    }
+  },
+  "id": "chatcmpl-UoujDLmFnbFpuMPY54JxnTycEqGpEq2q",
+  "timings": {
+    "cache_n": 3,
+    "prompt_n": 4981,
+    "prompt_ms": 3487.594,
+    "prompt_per_token_ms": 0.7001794820317205,
+    "prompt_per_second": 1428.2052326044832,
+    "predicted_n": 412,
+    "predicted_ms": 4657.139,
+    "predicted_per_token_ms": 11.331238442822384,
+    "predicted_per_second": 88.2516068341529
+  }
+}

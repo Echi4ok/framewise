@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"selected_image_ids\": [\"43603530299_3\", \"43603530299_6\", \"43603530299_7\", \"43603530299_8\"],\n  \"reason\": \"Фото 3 — таблица размеров, необходимая для выбора. Фото 6 и 7 — виды кед с разных ракурсов, демонстрируют дизайн. Фото 8 — информация о доставке, важна для покупателя.\"\n}"
+      }
+    }
+  ],
+  "created": 1793875292,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 138,
+    "prompt_tokens": 1436,
+    "total_tokens": 1574,
+    "prompt_tokens_details": {
+      "cached_tokens": 3
+    }
+  },
+  "id": "chatcmpl-0kKgahiCn11SfXuyXiueGsT9b21CAdcZ",
+  "timings": {
+    "cache_n": 3,
+    "prompt_n": 1433,
+    "prompt_ms": 796.405,
+    "prompt_per_token_ms": 0.5557606420097697,
+    "prompt_per_second": 1799.335765094393,
+    "predicted_n": 138,
+    "predicted_ms": 1441.228,
+    "predicted_per_token_ms": 10.519912408759124,
+    "predicted_per_second": 95.05782568753868
+  }
+}

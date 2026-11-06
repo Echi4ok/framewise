@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"selected_labels\": [\n    \"A\",\n    \"B\",\n    \"C\",\n    \"F\"\n  ],\n  \"reason\": \"Фото A и B показывают модель в целом, фото C — деталь материала, фото F — боковой вид, что даёт полный обзор продукта.\"\n}"
+      }
+    }
+  ],
+  "created": 1793874339,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 71,
+    "prompt_tokens": 1341,
+    "total_tokens": 1412,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    }
+  },
+  "id": "chatcmpl-vBnQU7TGNqIewwSgwIQY21V8MqHfdCQN",
+  "timings": {
+    "cache_n": 4,
+    "prompt_n": 1337,
+    "prompt_ms": 426.711,
+    "prompt_per_token_ms": 0.3191555721765146,
+    "prompt_per_second": 3133.2681838527715,
+    "predicted_n": 71,
+    "predicted_ms": 515.164,
+    "predicted_per_token_ms": 7.359485714285714,
+    "predicted_per_second": 135.87905987219605
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-05",
+  "base_url": "http://127.0.0.1:8080",
+  "scope": "Simplified one-product frontend workflow, real local backend and VLM",
+  "checks": {
+    "upload_first_empty_state": "passed",
+    "single_product_one_or_many_photos_explained": "passed",
+    "single_jpeg_upload_and_real_analysis": "passed, 3 descriptions with SVG regions",
+    "description_click_activates_region": "passed",
+    "two_jpeg_upload_remove_and_reselect": "passed, 2 prepared images selected",
+    "new_product_clears_draft_and_result": "passed",
+    "zero_selection_disables_analysis": "passed",
+    "maximum_four_selected": "passed",
+    "suitcase_example": "passed, 8 images",
+    "real_auto_selection": [1, 3, 7, 8],
+    "manual_adjustment_after_auto_selection": [1, 3, 7],
+    "optional_url_and_description_disclosure": "passed",
+    "whitespace_catalog_id": "passed, visible validation error",
+    "console_errors": [],
+    "typecheck_and_production_build": "passed",
+    "frontend_docker_rebuild": "passed"
+  },
+  "dom_geometry": [
+    {
+      "viewport_width": 1089,
+      "horizontal_overflow": false,
+      "image_size": [359.99997, 479.99997],
+      "svg_size": [359.99997, 479.99997]
+    },
+    {
+      "viewport_width": 390,
+      "horizontal_overflow": false,
+      "image_size": [286.40454, 381.88635],
+      "svg_size": [286.41815, 381.88635]
+    }
+  ],
+  "limitations": [
+    "Mobile DOM geometry checked; IAB screenshot captured a cropped desktop surface and was excluded.",
+    "Model described four wheels although two are distinguishable in the single tested view. This is not evidence of improved model accuracy."
+  ]
+}

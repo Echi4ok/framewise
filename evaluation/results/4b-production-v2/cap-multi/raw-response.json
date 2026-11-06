@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"40016330299_1\",\n      \"description\": \"Черная кепка-тракер с оранжевым кантриком и сетчатым задним краем.\",\n      \"bbox\": [\n        87,\n        250,\n        916,\n        753\n      ]\n    },\n    {\n      \"image_id\": \"40016330299_4\",\n      \"description\": \"Оранжевая подкладка с повторяющимся текстом \\\"[Larsen]\\\" на внутренней стороне кепки.\",\n      \"bbox\": [\n        87,\n        342,\n        916,\n        803\n      ]\n    },\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Пatches с персонажем Лоу-Ман с надписью \\\"SAM\\\" в левом верхнем углу.\",\n      \"bbox\": [\n        74,\n        187,\n        900,\n        803\n      ]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793874019,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 286,
+    "prompt_tokens": 4943,
+    "total_tokens": 5229,
+    "prompt_tokens_details": {
+      "cached_tokens": 444
+    }
+  },
+  "id": "chatcmpl-AqUKYUNNxyUTiDkngQlDsAcXmdMlLgwk",
+  "timings": {
+    "cache_n": 444,
+    "prompt_n": 4499,
+    "prompt_ms": 1487.777,
+    "prompt_per_token_ms": 0.3306905979106468,
+    "prompt_per_second": 3023.9746951324023,
+    "predicted_n": 286,
+    "predicted_ms": 2050.029,
+    "predicted_per_token_ms": 7.193084210526316,
+    "predicted_per_second": 139.02242358522733
+  }
+}

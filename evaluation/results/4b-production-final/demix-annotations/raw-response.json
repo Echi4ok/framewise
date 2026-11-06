@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"35472730299_1\",\n      \"description\": \"Белый логотип DEMIX на правом бедре черных леггинсов.\",\n      \"bbox\": [\n        730, 125, 779, 163\n      ]\n    },\n    {\n      \"image_id\": \"35472730299_9\",\n      \"description\": \"Желтый прямоугольный баннер с текстом 'СЕТЧАТЫЕ ВСТАВКИ' на левом крае изображения.\",\n      \"bbox\": [\n        98, 285, 435, 440\n      ]\n    },\n    {\n      \"image_id\": \"35472730299_10\",\n      \"description\": \"Белый логотип DEMIX на правом бедре черных леггинсов, видимый в темноте.\",\n      \"bbox\": [\n        480, 165, 550, 200\n      ]\n    },\n    {\n      \"image_id\": \"35472730299_13\",\n      \"description\": \"Белый логотип DEMIX на правом бедре черных леггинсов, видимый в темноте.\",\n      \"bbox\": [\n        480, 165, 550, 200\n      ]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793874495,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 367,
+    "prompt_tokens": 5588,
+    "total_tokens": 5955,
+    "prompt_tokens_details": {
+      "cached_tokens": 494
+    }
+  },
+  "id": "chatcmpl-g1xbYvRzjtHcZaimbEfWg0g0deGNlVC9",
+  "timings": {
+    "cache_n": 494,
+    "prompt_n": 5094,
+    "prompt_ms": 1785.416,
+    "prompt_per_token_ms": 0.35049391440910876,
+    "prompt_per_second": 2853.116584594291,
+    "predicted_n": 367,
+    "predicted_ms": 3055.383,
+    "predicted_per_token_ms": 8.348040983606557,
+    "predicted_per_second": 119.78858296979462
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"43603530299_1\",\n      \"description\": \"На боковой стороне кроссовка видна темно-серая полоса с контрастной строчкой.\",\n      \"bbox\": [300, 594, 875, 744]\n    },\n    {\n      \"image_id\": \"43603530299_1\",\n      \"description\": \"На подошве кроссовка видна оранжевая полоса.\",\n      \"bbox\": [85, 744, 885, 848]\n    },\n    {\n      \"image_id\": \"43603530299_3\",\n      \"description\": \"На кроссовке видны оранжевые шнурки с узором из черных и белых полос.\",\n      \"bbox\": [265, 462, 785, 674]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793875319,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 251,
+    "prompt_tokens": 3502,
+    "total_tokens": 3753,
+    "prompt_tokens_details": {
+      "cached_tokens": 496
+    }
+  },
+  "id": "chatcmpl-NemrUGlyv5bLXAnpX3PkFJYNissUDu6P",
+  "timings": {
+    "cache_n": 496,
+    "prompt_n": 3006,
+    "prompt_ms": 2171.246,
+    "prompt_per_token_ms": 0.7223040585495676,
+    "prompt_per_second": 1384.4585090772764,
+    "predicted_n": 251,
+    "predicted_ms": 2657.509,
+    "predicted_per_token_ms": 10.630036,
+    "predicted_per_second": 94.07305864251072
+  }
+}

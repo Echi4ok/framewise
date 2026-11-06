@@ -1,0 +1,154 @@
+{
+  "case": "demix-annotations",
+  "model": "qwen3-vl:8b-instruct",
+  "prompt": "Verify each proposed feature against the supplied product photographs. The product name only identifies the intended object. Pixels are the sole evidence. For each feature_index, keep the exact image_id. Preserve the existing description by referring to its index. Set supported=false if the entire description is not directly supported, if it describes a marketing banner instead of a physical product detail, or if it repeats the same feature from another view. For repeats retain only the clearest one. Uncertain OCR transcription, invented names, materials and functional qualities are unsupported. For supported features, return a fresh tight bbox around the physical detail, [x1,y1,x2,y2] integers 0..1000 for that single photo. Do not enclose unrelated parts merely to make a large rectangle. Return an entry for every supplied feature index and a brief reason.",
+  "prompt_sha256": "acb407ab1c58c42f702182905277074f9f7e4c1e57330a96bc05d72c26a8526d",
+  "source_run": "evaluation\\results\\8b-production-final\\demix-annotations\\result.json",
+  "seconds": 9.641,
+  "original_features": [
+    {
+      "image_id": "35472730299_1",
+      "description": "На бедре черных леггинсов виден белый логотип DEMIX.",
+      "bbox": [
+        710,
+        117,
+        776,
+        167
+      ]
+    },
+    {
+      "image_id": "35472730299_9",
+      "description": "На бедре черных леггинсов виден белый логотип DEMIX.",
+      "bbox": [
+        710,
+        117,
+        776,
+        167
+      ]
+    },
+    {
+      "image_id": "35472730299_10",
+      "description": "На бедре черных леггинсов виден белый логотип DEMIX.",
+      "bbox": [
+        476,
+        144,
+        542,
+        194
+      ]
+    },
+    {
+      "image_id": "35472730299_13",
+      "description": "На бедре черных леггинсов виден белый логотип DEMIX.",
+      "bbox": [
+        476,
+        144,
+        542,
+        194
+      ]
+    }
+  ],
+  "target_name": "Тайтсы для мальчиков Demix",
+  "result": {
+    "verified_features": [
+      {
+        "feature_index": 1,
+        "image_id": "35472730299_1",
+        "supported": true,
+        "bbox": [
+          697,
+          123,
+          770,
+          175
+        ],
+        "reason": "На бедре черных леггинсов виден белый логотип DEMIX, четко видимый в нормальном освещении."
+      },
+      {
+        "feature_index": 2,
+        "image_id": "35472730299_9",
+        "supported": true,
+        "bbox": [
+          770,
+          110,
+          830,
+          155
+        ],
+        "reason": "На бедре черных леггинсов виден белый логотип DEMIX, четко видимый в нормальном освещении, несмотря на текстовую вставку."
+      },
+      {
+        "feature_index": 3,
+        "image_id": "35472730299_10",
+        "supported": true,
+        "bbox": [
+          470,
+          135,
+          540,
+          185
+        ],
+        "reason": "На бедре черных леггинсов виден белый логотип DEMIX, четко видимый в условиях низкой освещенности, что подтверждает его светоотражающие свойства."
+      },
+      {
+        "feature_index": 4,
+        "image_id": "35472730299_13",
+        "supported": true,
+        "bbox": [
+          470,
+          135,
+          540,
+          185
+        ],
+        "reason": "На бедре черных леггинсов виден белый логотип DEMIX, четко видимый в условиях низкой освещенности, что подтверждает его светоотражающие свойства."
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 454,
+    "prompt_tokens": 5504,
+    "total_tokens": 5958,
+    "prompt_tokens_details": {
+      "cached_tokens": 183
+    }
+  },
+  "retained_features": [
+    {
+      "image_id": "35472730299_1",
+      "description": "На бедре черных леггинсов виден белый логотип DEMIX.",
+      "bbox": [
+        697,
+        123,
+        770,
+        175
+      ]
+    },
+    {
+      "image_id": "35472730299_9",
+      "description": "На бедре черных леггинсов виден белый логотип DEMIX.",
+      "bbox": [
+        770,
+        110,
+        830,
+        155
+      ]
+    },
+    {
+      "image_id": "35472730299_10",
+      "description": "На бедре черных леггинсов виден белый логотип DEMIX.",
+      "bbox": [
+        470,
+        135,
+        540,
+        185
+      ]
+    },
+    {
+      "image_id": "35472730299_13",
+      "description": "На бедре черных леггинсов виден белый логотип DEMIX.",
+      "bbox": [
+        470,
+        135,
+        540,
+        185
+      ]
+    }
+  ],
+  "enough_for_three_feature_contract": true
+}

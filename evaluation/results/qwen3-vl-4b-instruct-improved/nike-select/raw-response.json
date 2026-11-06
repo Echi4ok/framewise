@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"selected_image_ids\": [\n    \"43603530299_1\",\n    \"43603530299_3\",\n    \"43603530299_6\"\n  ],\n  \"reason\": \"PHOTO 1 показывает обувь в целом, PHOTO 3 — детали верха и шнуровки, PHOTO 6 — вид сбоку, что позволяет оценить форму и конструкцию. Избегаются рекламные и информационные изображения.\"\n}"
+      }
+    }
+  ],
+  "created": 1793873783,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 125,
+    "prompt_tokens": 1540,
+    "total_tokens": 1665,
+    "prompt_tokens_details": {
+      "cached_tokens": 4
+    }
+  },
+  "id": "chatcmpl-xxHPUg5Gz6qbZ1U31OrrHFvx1ZiSh0WE",
+  "timings": {
+    "cache_n": 4,
+    "prompt_n": 1536,
+    "prompt_ms": 404.69,
+    "prompt_per_token_ms": 0.26347005208333335,
+    "prompt_per_second": 3795.497788430651,
+    "predicted_n": 125,
+    "predicted_ms": 819.855,
+    "predicted_per_token_ms": 6.6117338709677425,
+    "predicted_per_second": 151.2462569600722
+  }
+}

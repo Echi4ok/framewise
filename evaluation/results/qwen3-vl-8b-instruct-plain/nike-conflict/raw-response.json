@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"43603530299_1\",\n      \"description\": \"Кеды с высоким верхом и яркими шнурками, выполненные из ткани с контрастной прострочкой.\",\n      \"bbox\": [85, 468, 915, 853]\n    },\n    {\n      \"image_id\": \"43603530299_3\",\n      \"description\": \"Кеды с высоким верхом и яркими шнурками, выполненные из ткани с контрастной прострочкой.\",\n      \"bbox\": [85, 317, 915, 853]\n    },\n    {\n      \"image_id\": \"43603530299_3\",\n      \"description\": \"Кеды с высоким верхом и яркими шнурками, выполненные из ткани с контрастной прострочкой.\",\n      \"bbox\": [259, 317, 875, 853]\n    },\n    {\n      \"image_id\": \"43603530299_1\",\n      \"description\": \"Кеды с высоким верхом и яркими шнурками, выполненные из ткани с контрастной прострочкой.\",\n      \"bbox\": [85, 468, 915, 853]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793875281,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 366,
+    "prompt_tokens": 3332,
+    "total_tokens": 3698,
+    "prompt_tokens_details": {
+      "cached_tokens": 75
+    }
+  },
+  "id": "chatcmpl-pSIXSm8hDlFytSxyeEHljvHVibkrJOU0",
+  "timings": {
+    "cache_n": 75,
+    "prompt_n": 3257,
+    "prompt_ms": 2406.651,
+    "prompt_per_token_ms": 0.7389164875652441,
+    "prompt_per_second": 1353.3329095078598,
+    "predicted_n": 366,
+    "predicted_ms": 4175.192,
+    "predicted_per_token_ms": 11.438882191780822,
+    "predicted_per_second": 87.42112937560717
+  }
+}

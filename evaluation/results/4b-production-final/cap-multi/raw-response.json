@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"40016330299_1\",\n      \"description\": \"Черная кепка-тракер с оранжевым козырьком и сетчатой задней частью.\",\n      \"bbox\": [\n        84,\n        250,\n        919,\n        753\n      ]\n    },\n    {\n      \"image_id\": \"40016330299_4\",\n      \"description\": \"Оранжевая внутренняя сторона кепки с черными швами и надписями на оранжевых ленточках.\",\n      \"bbox\": [\n        84,\n        194,\n        919,\n        803\n      ]\n    },\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"Оранжевый вышитый квадратный нашивок с изображением персонажа Сэм и надписью 'SAM' в левом верхнем углу.\",\n      \"bbox\": [\n        74,\n        185,\n        900,\n        803\n      ]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793874479,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 302,
+    "prompt_tokens": 5005,
+    "total_tokens": 5307,
+    "prompt_tokens_details": {
+      "cached_tokens": 506
+    }
+  },
+  "id": "chatcmpl-oY0Eh9ejr5FqMCD3HmmKgCxe6brVWH7z",
+  "timings": {
+    "cache_n": 506,
+    "prompt_n": 4499,
+    "prompt_ms": 1900.529,
+    "prompt_per_token_ms": 0.4224336519226495,
+    "prompt_per_second": 2367.235648600995,
+    "predicted_n": 302,
+    "predicted_ms": 2550.339,
+    "predicted_per_token_ms": 8.472887043189369,
+    "predicted_per_second": 118.02352549994335
+  }
+}

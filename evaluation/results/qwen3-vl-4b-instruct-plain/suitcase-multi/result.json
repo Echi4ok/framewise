@@ -1,0 +1,120 @@
+{
+  "case": "suitcase-multi",
+  "model": "qwen3-vl:4b-instruct",
+  "variant": "plain",
+  "prompt": "Analyze the product photos. Find 3-5 product features. Write short Russian descriptions with bounding boxes normalized 0..1000 [x1,y1,x2,y2] and exact image_id. Return status and features as JSON.",
+  "image_ids": [
+    "43358020299_1",
+    "43358020299_3",
+    "43358020299_7"
+  ],
+  "endpoint": "http://127.0.0.1:11436/v1",
+  "seconds": 18.093,
+  "usage": {
+    "completion_tokens": 464,
+    "prompt_tokens": 5108,
+    "total_tokens": 5572,
+    "prompt_tokens_details": {
+      "cached_tokens": 69
+    }
+  },
+  "finish_reason": "stop",
+  "result": {
+    "status": "ok",
+    "features": [
+      {
+        "image_id": "43358020299_1",
+        "description": "Регулируемая телескопическая ручка с фиксатором, обеспечивающая комфортный транспорт при перемещении чемодана.",
+        "bbox": [
+          398,
+          50,
+          595,
+          472
+        ]
+      },
+      {
+        "image_id": "43358020299_1",
+        "description": "Четыре двойных колеса, вращающихся на 360 градусов, обеспечивают плавное и свободное движение в любом направлении.",
+        "bbox": [
+          267,
+          876,
+          720,
+          949
+        ]
+      },
+      {
+        "image_id": "43358020299_3",
+        "description": "Внутреннее пространство чемодана разделено на два отделения: одно с фиксирующими ремнями в форме X, другое на молнии с карманом.",
+        "bbox": [
+          85,
+          270,
+          910,
+          725
+        ]
+      },
+      {
+        "image_id": "43358020299_7",
+        "description": "Цифровой замок системы TSA, позволяющий сотрудникам таможни проводить инспекцию без повреждения чемодана.",
+        "bbox": [
+          410,
+          540,
+          785,
+          704
+        ]
+      },
+      {
+        "image_id": "43358020299_1",
+        "description": "Материал чемодана — полипропилен, обеспечивающий легкость и прочность при длительном использовании.",
+        "bbox": [
+          270,
+          472,
+          720,
+          949
+        ]
+      }
+    ]
+  },
+  "valid": true,
+  "prompt_sha256": "f390e89b1c740acbad81fa299064bffc4aeb3c36b267218d15144008388f1699",
+  "input_images": [
+    {
+      "image_id": "43358020299_1",
+      "path": "data/images/43358020299_1.jpg",
+      "source_sha256": "f3fad5c3467945ab44315381cfd21907253e9b0da7a20130e7c8f98fd513a710",
+      "canonical_jpeg_sha256": "87580fc2300e9d8069f8994a1df1cf3a8bf8a4622b4b0fa0e7e634d223d5b822",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "43358020299_3",
+      "path": "data/images/43358020299_3.jpg",
+      "source_sha256": "accfb9947db6a203d6cf6ce13dd9487c6ade3ff37bcad2f63b59ccee8050370c",
+      "canonical_jpeg_sha256": "046625525d5647b5913aef89313ea9cc5ee560b10fbf26753b5e48e2f86c56f7",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    },
+    {
+      "image_id": "43358020299_7",
+      "path": "data/images/43358020299_7.jpg",
+      "source_sha256": "64b228e8875f9c0999ea8e58cdcc1957a3d961bf242898a724b8635f3140e03c",
+      "canonical_jpeg_sha256": "05aabce4484ee3ed090409d0175db5803878ca856a665dd1756d55c76739b5c5",
+      "canonical_size": [
+        1200,
+        1600
+      ],
+      "jpeg_quality": 90
+    }
+  ],
+  "hashes_reconstructed_from_recorded_recipe": true,
+  "sent_image_sha256": [
+    "87580fc2300e9d8069f8994a1df1cf3a8bf8a4622b4b0fa0e7e634d223d5b822",
+    "046625525d5647b5913aef89313ea9cc5ee560b10fbf26753b5e48e2f86c56f7",
+    "05aabce4484ee3ed090409d0175db5803878ca856a665dd1756d55c76739b5c5"
+  ]
+}

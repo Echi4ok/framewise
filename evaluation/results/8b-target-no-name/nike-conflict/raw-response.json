@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"43603530299_1\",\n      \"description\": \"На боковой стороне кроссовка видна темно-серая полоса с контрастной строчкой.\",\n      \"bbox\": [300, 577, 875, 748]\n    },\n    {\n      \"image_id\": \"43603530299_1\",\n      \"description\": \"На подошве кроссовка видна оранжевая полоса.\",\n      \"bbox\": [85, 748, 885, 850]\n    },\n    {\n      \"image_id\": \"43603530299_3\",\n      \"description\": \"На кроссовке видны оранжевый логотип Nike в виде галочки.\",\n      \"bbox\": [350, 700, 450, 740]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793875366,
+  "model": "qwen3-vl:8b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 246,
+    "prompt_tokens": 3502,
+    "total_tokens": 3748,
+    "prompt_tokens_details": {
+      "cached_tokens": 3501
+    }
+  },
+  "id": "chatcmpl-glEuL7t4Icsj8uw6qOiJrRopoVoySIaJ",
+  "timings": {
+    "cache_n": 3501,
+    "prompt_n": 1,
+    "prompt_ms": 15.985,
+    "prompt_per_token_ms": 15.985,
+    "prompt_per_second": 62.55864873318737,
+    "predicted_n": 246,
+    "predicted_ms": 2475.823,
+    "predicted_per_token_ms": 10.1054,
+    "predicted_per_second": 98.95699329071586
+  }
+}

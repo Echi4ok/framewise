@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"detections\": [\n    {\n      \"target_id\": \"target-1\",\n      \"image_id\": \"43358020299_1\",\n      \"bbox\": [\n        405,\n        50,\n        595,\n        472\n      ]\n    },\n    {\n      \"target_id\": \"target-2\",\n      \"image_id\": \"43358020299_3\",\n      \"bbox\": [\n        100,\n        274,\n        900,\n        700\n      ]\n    },\n    {\n      \"target_id\": \"target-3\",\n      \"image_id\": \"43358020299_3\",\n      \"bbox\": [\n        530,\n        288,\n        860,\n        696\n      ]\n    },\n    {\n      \"target_id\": \"target-4\",\n      \"image_id\": \"43358020299_7\",\n      \"bbox\": [\n        415,\n        540,\n        785,\n        705\n      ]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793873791,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 274,
+    "prompt_tokens": 4724,
+    "total_tokens": 4998,
+    "prompt_tokens_details": {
+      "cached_tokens": 75
+    }
+  },
+  "id": "chatcmpl-LOkRhjjcKcAb85WTVgLXRO8L1CxdXpW5",
+  "timings": {
+    "cache_n": 75,
+    "prompt_n": 4649,
+    "prompt_ms": 1706.603,
+    "prompt_per_token_ms": 0.36709034200903423,
+    "prompt_per_second": 2724.1250601340794,
+    "predicted_n": 274,
+    "predicted_ms": 2017.248,
+    "predicted_per_token_ms": 7.3891868131868135,
+    "predicted_per_second": 135.33288916385095
+  }
+}

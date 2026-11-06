@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-06",
+  "url": "http://127.0.0.1:5173/",
+  "model": "Qwen3-VL-8B-Instruct Q4_K_M",
+  "selection": {
+    "error": null,
+    "gradients": 0,
+    "notice": "Полезные ракурсы отмечены. Вы можете изменить выбор, затем нажать «Найти детали».",
+    "selected": [
+      1,
+      3,
+      7,
+      8
+    ]
+  },
+  "analysis": {
+    "count": 4,
+    "features": [
+      "1На боковой стороне чемодана видна надпись TORBER.↗",
+      "2Внутри чемодана видна светло-голубая тканевая подкладка с повторяющимся узором из треугольников и кругов.↗",
+      "3На чемодане установлен замок с кодовым механизмом и две металлические застежки с надписью TORBER.↗",
+      "4На боковой стороне чемодана видны два колеса с серыми спицами и черными ободками.↗"
+    ],
+    "linkedPhoto": "Feature 3 opened photo 7 with SVG"
+  },
+  "html": {
+    "aiDisabled": true,
+    "aiExplanation": "Здесь одно фото. Оно уже выбрано для анализа.",
+    "description": "Ручка & замок - детали\n\n• Первый пункт\n• Второй пункт",
+    "hasDescriptionElements": false,
+    "hasLongDash": false,
+    "title": "Товар - проверка"
+  },
+  "mobile": {
+    "aiWidth": 297.5454406738281,
+    "documentWidth": 375,
+    "overflow": false,
+    "width": 390
+  },
+  "layout": {
+    "before": {
+      "x": 72.72272491455078,
+      "y": 424.63633155822754
+    },
+    "after": {
+      "x": 72.72272491455078,
+      "y": 424.63633155822754
+    },
+    "baselineShiftPx": 113.68637084960938
+  },
+  "consoleErrors": [],
+  "quality": "Integration and presentation verification; not a new model accuracy evaluation."
+}

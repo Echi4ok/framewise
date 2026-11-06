@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"status\": \"ok\",\n  \"features\": [\n    {\n      \"image_id\": \"40016330299_1\",\n      \"description\": \"Квадратная нашивка с изображением персонажа Йоземит Сэм, обрамленная оранжевой строчкой.\",\n      \"bbox\": [\n        274,\n        338,\n        535,\n        540\n      ]\n    },\n    {\n      \"image_id\": \"40016330299_1\",\n      \"description\": \"На сетчатой части бейсболки видна тканевая нашивка с желтой надписью Yosemite Sam.\",\n      \"bbox\": [\n        770,\n        527,\n        885,\n        578\n      ]\n    },\n    {\n      \"image_id\": \"40016330299_4\",\n      \"description\": \"Оранжевый козырек с черными швами и внутренней обшивкой, виден сзади.\",\n      \"bbox\": [\n        85,\n        343,\n        915,\n        804\n      ]\n    },\n    {\n      \"image_id\": \"40016330299_4\",\n      \"description\": \"На внутренней стороне козырька видна оранжевая лента с повторяющейся надписью \\\"Yosemite Sam\\\".\",\n      \"bbox\": [\n        330,\n        248,\n        885,\n        644\n      ]\n    },\n    {\n      \"image_id\": \"40016330299_5\",\n      \"description\": \"На нашивке в левом верхнем углу видна желтая надпись \\\"SAM\\\".\",\n      \"bbox\": [\n        178,\n        257,\n        300,\n        300\n      ]\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793873768,
+  "model": "qwen3-vl:4b-instruct",
+  "system_fingerprint": "b12124-8bed7cfb9",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 470,
+    "prompt_tokens": 5149,
+    "total_tokens": 5619,
+    "prompt_tokens_details": {
+      "cached_tokens": 650
+    }
+  },
+  "id": "chatcmpl-U5svqoUfVHELobBF5xiPCBnoUaJ5qYRn",
+  "timings": {
+    "cache_n": 650,
+    "prompt_n": 4499,
+    "prompt_ms": 1576.059,
+    "prompt_per_token_ms": 0.3503131807068237,
+    "prompt_per_second": 2854.58856552959,
+    "predicted_n": 470,
+    "predicted_ms": 3501.85,
+    "predicted_per_token_ms": 7.466631130063965,
+    "predicted_per_second": 133.92920884675243
+  }
+}
